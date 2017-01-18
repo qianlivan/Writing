@@ -1,0 +1,814 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.3.9)  12 AUG 2016 20:27
+entering extended mode
+**turbulence_in_MC.tex
+
+(C:\Users\lqian\Documents\work\writing\中国科学_分子云中的湍流\latex
+-CN\latex-CN\turbulence_in_MC.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+(C:\Users\lqian\Documents\work\writing\中国科学_分子云中的湍流\latex
+-CN\latex-CN\SCACGnew.cls
+
+LaTeX Warning: You have requested document class `SCACGnew',
+               but the document class provides `SCAG'.
+
+Document Class: SCAG 2008/11/15 v1, by Liu Yun
+(C:\CTEX\CTeX\tex\latex\cct\cctart.cls
+Document Class: cctart 2004/10/14 Derived from the `article' class
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\CTEX\CTeX\tex\latex\cct\cctbase.sty
+Package: cctbase 2006/05/17
+ (C:\CTEX\CTeX\tex\latex\cct\CCT.sty
+0.61803 [2009/11/20] (C:\CTEX\CTeX\tex\latex\cct\cchead.sty
+\!ZihaoNo=\count87
+\ccwd=\dimen103
+\ccht=\dimen104
+\ccdp=\dimen105
+\!ccbox=\box26
+\!ccbdskip=\skip43
+)
+Package: CCT 2009/11/20 0.61803
+\@CCTcnta=\count88
+\@CCTcntb=\count89
+\@CCTlastkern=\count90
+\@CCTglue=\skip44
+\@CCTtoks=\toks14
+
+(C:\CTEX\CTeX\tex\latex\cct\CCT.cfg) (C:\CTEX\CTeX\tex\latex\cct\GBKkern.cfg)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd) (\ziti{A}->gbksong)
+\@CCTskip=\skip45
+)))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen106
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks16
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks17
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks25
+)
+(C:\CTEX\CTeX\tex\latex\cct\cct.sty 0.61803 [2009/11/20]
+
+LaTeX Warning: You have requested package `cct',
+               but the package provides `CCT'.
+
+Package: CCT 2009/11/20 0.61803
+LaTeX Info: Redefining \zihaoAny on input line 794.
+(C:\CTEX\CTeX\tex\latex\cct\CCT.cfg) (C:\CTEX\CTeX\tex\latex\cct\GBKkern.cfg)
+(\ziti{A}->gbksong)
+LaTeX Info: Redefining \CCTchar on input line 1227.
+) (C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(C:\CTEX\UserData\tex\latex\txfonts\txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Info: Redefining \not on input line 1043.
+LaTeX Info: Redefining \textsquare on input line 1063.
+LaTeX Info: Redefining \openbox on input line 1064.
+)
+(C:\CTEX\MiKTeX\tex\latex\psnfss\times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup10
+\symboldletters=\mathgroup11
+\symboldsymbols=\mathgroup12
+\symboldlargesymbols=\mathgroup13
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\tools\array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks26
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+\TX@col@width=\dimen117
+\TX@old@table=\dimen118
+\TX@old@col=\dimen119
+\TX@target=\dimen120
+\TX@delta=\dimen121
+\TX@cols=\count103
+\TX@ftn=\toks27
+)
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count104
+\Gm@cntv=\count105
+\c@Gm@tempcnt=\count106
+\Gm@bindingoffset=\dimen122
+\Gm@wd@mp=\dimen123
+\Gm@odd@mp=\dimen124
+\Gm@even@mp=\dimen125
+\Gm@layoutwidth=\dimen126
+\Gm@layoutheight=\dimen127
+\Gm@layouthoffset=\dimen128
+\Gm@layoutvoffset=\dimen129
+\Gm@dimlist=\toks29
+
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(C:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(C:\CTEX\MiKTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count107
+\mult@box=\box29
+\multicol@leftmargin=\dimen130
+\c@unbalance=\count108
+\c@collectmore=\count109
+\doublecol@number=\count110
+\multicoltolerance=\count111
+\multicolpretolerance=\count112
+\full@width=\dimen131
+\page@free=\dimen132
+\premulticols=\dimen133
+\postmulticols=\dimen134
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box30
+\last@line=\box31
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count113
+\c@finalcolumnbadness=\count114
+\last@try=\dimen135
+\multicolovershoot=\dimen136
+\multicolundershoot=\dimen137
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\multicol@sort@counter=\count115
+)
+(C:\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks30
+\minaw@=\dimen138
+\bigaw@=\dimen139
+\minCDarrowwidth=\dimen140
+)
+(C:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup14
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(C:\CTEX\UserData\tex\latex\was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup15
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(C:\CTEX\UserData\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Users\lqian\Documents\work\writing\中国科学_分子云中的湍流\latex
+-CN\latex-CN\mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/txr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/txmi/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/bx/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/txsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/bx/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/txex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/bx/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `italic' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `italic' in version `normal'
+(Font)                  OT1/txr/m/it --> OT1/ptm/m/it on input line 33.
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/bx/it --> OT1/ptm/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/txr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+) (C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+)
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks31
+\float@box=\box55
+\@float@everytoks=\toks32
+\@floatcapt=\box56
+)
+
+LaTeX Warning: You have requested document class `SCACGnew',
+               but the document class provides `SCGC'.
+
+Document Class: SCGC 2008/11/15 v1
+(C:\CTEX\UserData\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count117
+\@cmidlb=\count118
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count119
+\@lastruleclass=\count120
+\@thisrulewidth=\dimen155
+)
+(C:\CTEX\UserData\tex\latex\ccaption\ccaption.sty
+Package: ccaption 2011/08/07 v3.2c Extended captioning and new floats
+\@contcwidth=\skip65
+\@contindw=\skip66
+\abovelegendskip=\skip67
+\belowlegendskip=\skip68
+\c@newflo@tctr=\count121
+))
+(C:\CTEX\UserData\tex\latex\soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks33
+\SOUL@lasttoken=\toks34
+\SOUL@cmds=\toks35
+\SOUL@buffer=\toks36
+\SOUL@token=\toks37
+\SOUL@spaceskip=\skip69
+\SOUL@ttwidth=\dimen156
+\SOUL@uldp=\dimen157
+\SOUL@ulht=\dimen158
+)
+(C:\CTEX\UserData\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\CTEX\UserData\tex\latex\caption\caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen159
+\captionmargin@=\dimen160
+\captionwidth=\dimen161
+\caption@tempdima=\dimen162
+\caption@indent=\dimen163
+\caption@parindent=\dimen164
+\caption@hangindent=\dimen165
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\let \@conttempa \relax
+ \ifdim \prevdepth >-99\p@ \vskip \abovecaptionskip \else \def \@conttempa {\vb
+ox to\topskip {}}\fi \let \@contfnote \footnote \renewcommand {\footnote }[2][]
+{} \let \@contfmark \footnotemark \renewcommand {\footnotemark }[1][]{} \let \@
+contlabel \label \renewcommand {\label }[1]{} \sbox \@tempboxa {\@contnfont #1\
+@contdelim \@conttfont #2} \let \footnote \@contfnote \let \footnotemark \@cont
+fmark \let \label \@contlabel \ifdim \wd \@tempboxa <\linewidth \centering \fi 
+\if@contcw \centering \parbox {\@contcwidth }{\fi \if@conthang \sbox \@tempboxa
+ {\@contnfont #1\@contdelim } \@contpre {\@contnfont #1\@contdelim }\@conttempa
+ {\@contcstyle \hangindent =\wd \@tempboxa \hangafter =\@ne \@conttfont #2\par 
+} \else \if@contindent \@contpre {\@contnfont #1\@contdelim }\@conttempa {\@con
+tcstyle \hangindent =\@contindw \hangafter =\@ne \@conttfont #2\par } \else \@c
+ontpre {\@contnfont #1\@contdelim }\@conttempa {\@contcstyle \@conttfont #2\par
+ } \fi \fi \@contpost \if@contcw \par } \fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count122
+Package caption Info: float package is loaded.
+)
+
+LaTeX Warning: Unused global option(s):
+    [CJK].
+
+
+(C:\Users\lqian\Documents\work\writing\中国科学_分子云中的湍流\latex
+-CN\latex-CN\turbulence_in_MC.aux
+
+LaTeX Warning: Label `Li2015' multiply defined.
+
+
+LaTeX Warning: Label `Li2008' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 43.
+
+ (C:\CTEX\UserData\tex\latex\txfonts\omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 43.
+
+
+(C:\CTEX\UserData\tex\latex\txfonts\omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 43.
+
+
+(C:\CTEX\UserData\tex\latex\txfonts\omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 43.
+
+(C:\CTEX\UserData\tex\latex\txfonts\utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 43.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=597.50787pt
+* \oddsidemargin=-17.0pt
+* \evensidemargin=-17.0pt
+* \topmargin=-10.0pt
+* \headheight=12.0pt
+* \headsep=19.91692pt
+* \topskip=10.0pt
+* \footskip=25.60747pt
+* \marginparwidth=111.0pt
+* \marginparsep=11.0pt
+* \columnsep=19.91684pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd) (\ziti{B}->gbkhei)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 81.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd) (\ziti{D}->gbkfs)
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 81
+.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 81
+.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 81
+.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 81
+.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for U+txsya on input line 81.
+
+(C:\CTEX\UserData\tex\latex\txfonts\utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 81.
+
+(C:\CTEX\UserData\tex\latex\txfonts\utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 81.
+
+(C:\CTEX\UserData\tex\latex\txfonts\utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 81.
+
+(C:\CTEX\UserData\tex\latex\txfonts\utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 81.
+
+(C:\CTEX\UserData\tex\latex\txfonts\ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 81.
+
+(C:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+File: SB-ZG.eps Graphic file (type eps)
+ <SB-ZG.eps>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19kai.fd) (\ziti{C}->gbkkai)
+Loading punctuation table gbksong.tbl Loading punctuation table gbkfs.tbl
+LaTeX Font Info:    Calculating math sizes for size <9.2> on input line 104.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.52005> not available
+(Font)              size <6> substituted on input line 104.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
+[1
+
+]
+Overfull \hbox (1.90002pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (1.05566pt too high) has occurred while \output is active []
+
+
+[2]
+Overfull \hbox (1.90002pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (1.05566pt too high) has occurred while \output is active []
+
+
+[3]
+
+Package mathptmx Warning: There are no bold math fonts on input line 248.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+$\OML/ztmcm/m/it/10 r[]$\gbksong47-10.5 � \gbksong41-10.5  \gbksong51-10.5 # \
+gbksong42-10.5 � \gbksong49-10.5 � \gbksong41-10.5 � \gbksong40-10.5 � \gbksong
+58-10.5 � \gbksong45-10.5 m \gbksong60-10.5  5 \gbksong57-10.5 � \gbksong49-10
+.5 6 \gbksong40-10.5  \gbksong48-10.5 n \gbksong49-10.5 � \gbksong62-10.5 �
+ []
+
+
+Overfull \hbox (1.90002pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (1.05566pt too high) has occurred while \output is active []
+
+
+[4]
+Overfull \hbox (1.90002pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (1.05566pt too high) has occurred while \output is active []
+
+
+[5]
+Missing character: There is no � in font ptmr7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 484.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 484.
+
+Overfull \hbox (1.90002pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (1.05566pt too high) has occurred while \output is active []
+
+
+[6]
+(C:\Users\lqian\Documents\work\writing\中国科学_分子云中的湍流\latex
+-CN\latex-CN\turbulence_in_MC.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.47995pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 99 (\begingroup)
+### semi simple group (level 1) entered at line 99 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 6137 strings out of 495355
+ 82890 string characters out of 3183883
+ 166583 words of memory out of 3000000
+ 9030 multiletter control sequences out of 15000+200000
+ 131651 words of font info for 405 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,14n,45p,840b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on turbulence_in_MC.dvi (6 pages, 61300 bytes).

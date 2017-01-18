@@ -1,0 +1,507 @@
+% 中国科学 G 辑:  物理学~力学~天文学  中文模板, 请直接用 LaTeX 编译.
+\documentclass{SCACGnew}
+\usepackage{amssymb,booktabs}
+\usepackage{color,soul}
+
+
+\usepackage[bf,footnotesize,labelsep=quad,singlelinecheck=off]{caption}
+
+
+% 楷体
+% 请作者注意: 在整篇文章中, 不要使用任何改变文章版式的命令, 谢谢.
+% 常见的数学类宏包如 amsmath,amsthm,amsfonts,amssymb,bm 和插图宏包会自动加载.
+% 请在此添加文章要用到的特殊宏包以及自定义命令等.
+
+
+\def\dl{\displaystyle}
+\def\tlj{\end{document}}
+
+\newcommand{\bbbb}[1]{\mbox{\scriptsize\boldmath $#1$}}
+\newcommand{\apj}{ApJ}
+\newcommand{\aap}{A\&A}
+\newcommand{\aapr}{A\&ARv}
+\newcommand{\apjl}{ApJL}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\araa}{ARA\&A}
+\newcommand{\apjs}{ApJS}
+\newcommand{\aj}{AJ}
+
+\def\R{{\Bbb R}} \def\N{{\Bbb N}}  \def\Q{{\Bbb Q}} \def\O{{\Bbb O}}  \def\Z{{\Bbb Z}} \def\C{{\Bbb C}}
+\def\no{\noindent}
+
+\def\D{{\Delta}}
+\def\ot{\otimes}
+\def\d{\rm d}
+\def\le{\leqslant}
+\def\ge{\geqslant}
+\def\leq{\leqslant}
+\def\geq{\geqslant}
+\def\e{{\rm e}}
+\def\j{{\rm j}}
+\def\dl{\displaystyle}
+
+\begin{document}
+
+%文章的基本参数
+\Year{2015} % 出版年
+\Vol{45} % 卷
+\No{??} % 期
+\BeginPage{1} % 起始页码
+%\EndPage{??} % 终止页码
+\ReceivedDate{??} % 收稿日期
+\AcceptedDate{??} % 接受日期
+\DOI{??}
+\ArtNo{??} %六位页码
+
+%引用信息%%%%%%%%%%%%%%%%%%%%%%%%%作者不需填写此部分%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{picture}(0,0)
+\put(-25,-615){ \fcolorbox[rgb]{0,0,0}{1.0,1.0,1.0}
+{\parbox[t]{155truemm{\bf\scriptsize 引用格式:~ }}{\scriptsize
+钱磊, 李菂, 潘之辰. 分子云中的湍流. 中国科学:
+物理学~力学~天文学, 2015, 45: ??\\
+Qian L., Li D., Pan Z.Z., Turbulence in Molecular Clouds (in Chinese). Sci Sin- Phys Mech Astron, 2015, 45: ??,
+doi: ??}~}}\end{picture}
+%引用信息%%%%%%%%%%%%%%%%%%%%%%%%%作者不需填写此部分%%%%%%%%%%%%%%%%%%
+
+
+
+% 标题: 此命令的完整格式为:
+%       \title[短标题]{标题}{题注}
+% 说明: 1. 短标题为可选项, 出现于页眉中, 若省略, 则与标题相同.
+%       2. 题注是对标题的附加说明, 将出现于首页脚注区, 若没有, 花括号不可省略.
+\begin{picture}(0,0)
+\put(-20,10){{\noindent\zihao{4}\hspace{-1mm}
+ \fcolorbox[rgb]{1,1,1}{0.65,0.65,0.65}{\parbox[t]{18truemm}{\heiti
+ {\quad \zihao{-4} 综~~~述}}}}}\end{picture}
+
+
+
+
+\title[分子云中的湍流]{分子云中的湍流}{}
+
+\author[\ding{172}\ding{173}]{钱磊}{~~}%通信作者请在相应作者后加*号
+\author[\ding{172}\ding{173}]{李菂}{}
+\author[\ding{172}]{潘之辰}{}
+
+
+%\Email{xxzengphysics@163.com}
+
+\Correspondingauthor{*通信作者\ \ }%如果仅有一位作者请删去括号中的内容
+\Foundation{国家重点基础研究发展（973）计划 (编号2012CB821800, 2015CB857100);黔科合人才团队（2013）4021}% 项目资助信息
+\Authormark{钱磊等}%第一位作者后加“等”，如果仅有一位作者请删去“等”
+
+
+\address[\ding{172}\!\!]{国家天文台，北京，100012}
+\address[\ding{173}\!\!]{中国科学院射电天文重点实验室，南京，210008}
+\address[\!\!]{*联系人, E-mail: lqian@nao.cas.cn}
+\maketitle
+
+
+\begin{center}
+{\begin{abstract}\xiaowuhao \quad{\zaiyao
+湍流是分子云中的重要现象，在恒星形成中发挥了关键作用。湍流研究包括能量注入、能量耗散和间歇性等。湍流能量注入可能来源于星系盘的剪切、引力塌缩以及恒星演化过程的反馈。能量注入机制可能不是唯一的。我们尚未明确测量到湍流能量耗散尺度，但可以通过观测确定湍流耗散速率。实测中已经观察到了分子云中湍流的间歇性。未来分子云中的湍流研究还需要大天区、高空间分辨率的谱线成图数据（例如，110米望远镜C$_2$H谱线、CO谱线成图）以更好地研究能量注入、间歇性以及各向异性等课题。
+}\end{abstract}
+\parbox{17cm}{\keywords{分子云, 湍流} }
+\parbox{17cm}{\PACS{11.25.Tq,~04.70.-s,~04.50.Kd}}
+\parbox{17cm}{\AutoDOI}
+}\end{center}\vspace{-2mm}\textcolor[rgb]{0.4,0.4,0.4}{\rule{17cm}{0.4pt}}
+%
+
+
+%%引用信息%%%%%%%%%%%%%%%%%%%%%%%%%作者不需填写此部分%%%%%%%%%%%%%%%%%%
+%\renewcommand{\headrulewidth}{0pt}
+%\thispagestyle{fancy} \fancyfoot[L]{\footnotesize
+%\fcolorbox[rgb]{0,0,0}{1,1,1}{\parbox[t]{154truemm{\bf\scriptsize\raisebox{-3pt}{}\raisebox{8pt}{}
+%引用格式:\ }}{\scriptsize 梁军利, 刘丁, 张军英.
+%基于平行因子分析的频率、二维到达角和极化参数联合估计. 2010, 53;
+%1--}}}
+
+\vspace{2mm} \textwidth=170truemm\textheight=219truemm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+
+\section{概述}%\vspace*{1mm}
+\label{sec:intro}
+分子云是恒星的诞生地。湍流是恒星形成中的重要物理过程。观测发现，分子云中分子谱线的宽度（以CO为例，$\sim 1$ km/s）通常大于其热展宽($\sim 0.1$ km/s)，一般认为这个现象是由分子云中的湍流导致的。
+
+分子云中可以分解出空间和速度上的成协结构，它们被认为是分子云中的团块（clumps, Stutzki \& G\"usten 1990；Williams, De Geus \& Blitz 1994）。对分子云光致电离区的研究也独立地得出结论，分子云中的气体是极端非均匀的、多团块的（Stutzki et al. 1988）。分子云在较大和较小的尺度都是引力主导的，但在中间的尺度可能是湍流主导的（Hennebelle \& Falgarone 2012）。Blitz \& Williams （1997）指出分子云在大尺度上具有自相似性，在小尺度上偏离自相似性，这可能是由于引力在小尺度上主导造成的。
+%在惯性范围内湍流可能产生自相似性，但是自相似性不一定对应湍流。
+%分子云中这些团块最初可能是湍流密度涨落导致的，虽然其后来的演化可能是自引力主导的。
+
+Larson（1981）在分析了大约60块典型分子云的线宽$\delta v$和尺度$L$后发现二者的关系满足
+\begin{equation}
+\delta v\propto L^{0.38}.
+\end{equation}
+这个线宽-尺度关系的一个自然的解释是湍流能量能量从大尺度级联传递到小尺度。对于不可压缩湍流
+\begin{equation}
+\delta v\propto \varepsilon^{1/2}\propto l^{1/3},
+\end{equation}
+幂律指数$1/3$和观测到的0.38很接近。注意到$l$是三维尺度，而$L$是投影到天球面的尺度。更多的观测发现$\delta v$和$L$ 的关系为（Solomon et al. 1987）
+\begin{equation}
+\delta v\propto L^{0.5}.
+\end{equation}
+这表明分子云中的湍流偏离不可压缩性。前面提到，分子云中有大幅度密度变化，其中的气体可压缩是更符合实际的。
+
+湍流在恒星形成过程中起到了两方面作用。一方面，湍流密度涨落创造了产生致密云核的条件。另一方面，湍流也能抵抗引力塌缩，延缓或阻止恒星的形成（Gao, Xu \& Law 2015）。本文主要总结分子云湍流研究中几个问题，包括能量注入的机制和尺度（第2节）、能量耗散的机制、尺度和速率（第3节）、湍流间歇性的模型与观测（第4节）以及湍流各向异性对能量耗散的影响（第5节），并讨论与此相关的理论和观测课题以及对110米望远镜科学目标的展望（第6节）。
+
+\section{湍流能量注入}%\vspace*{1mm}
+\label{sec:driving}
+
+\subsection{注入机制}
+由观测到的分子谱线宽度大于理论上的热运动展宽可以得到推论，即分子云中的湍流是超声速的。超声速湍流衰减很快（Mac Low et al. 1998），为了维持湍流运动，必须考虑湍流能量注入。
+
+湍流能量注入有一些可能的机制，尚不确定哪一种在分子云中起主要作用。不同的分子云中有可能具有不同的湍流能量注入机制。
+
+星系盘的较差转动（Fleck 1981）是一种广泛适用的湍流能量注入机制，可以应用于没有显著恒星形成活动的分子云。剪切（较差运动）注入的湍流能量可以抵抗引力塌缩，这可以解释剪切较小的矮星系中较高的恒星形成率（Hunter 1998）。但这种大尺度的作用如何能有效作用于小尺度的分子云还是问题。与磁场有关的磁转动不稳定性（MRI）可能发挥了一定作用（Balbus \& Hawley 1991）。
+
+引力塌缩驱动湍流是另一种概念上可行的湍流能量注入机制。这种机制不需要外部能量注入，湍流能量来源于分子云塌缩过程本身。然而这样的湍流会在和塌缩相同的时标耗散，从而无法有效抵抗引力塌缩（Klessen, Burkert \& Bate 1998）。
+
+恒星演化过程的反馈也是可能的湍流能量注入机制，虽然这种机制可能不适用于没有显著恒星活动的分子云。这种恒星过程包括超新星爆发、大质量恒星星风和原恒星外流。
+虽然超新星爆发和大质量恒星星风的能量足以驱动湍流，但其能量过于巨大，有可能直接将分子云中的气体吹散，这是其作为湍流能量注入机制的问题。这两种机制可能在更大的尺度上驱动了弥散星际介质中的湍流。若分子云与这些星际介质中的大尺度湍流有耦合，则可以避免能量太大这个问题。数值模拟发现大尺度上的速度弥散和尺度的关系和分子云中相同，表明这种机制确实在分子云种湍流的起源中发挥了重要作用（Padoan et al. 2016）。
+
+研究表明原恒星外流可以维持分子云中的湍流（即能量注入率可以平衡能量耗散率），但不足以解释总的湍流能量的来源（Li et al. 2015）。
+
+\subsection{注入尺度}
+湍流能量注入尺度和注入机制有关。对于注入星系盘的较差转动这样的大尺度能量注入，注入尺度小于或与分子云自身尺度相当，和大尺度运动与分子云耦合的尺度有关。而引力塌缩对应的能量注入尺度应该就是分子云自身的尺度。而原恒星外流尺度较小，其能量注入尺度也较小。从观测得到的速度弥散和尺度的关系看，幂律通常延伸到较大尺度，这表明湍流能量注入可能是大尺度的。
+
+Padoan et al. (2015)的数值模拟得到超新星导致的湍流能量注入尺度在50 pc到100 pc之间变化，时间平均的尺度为70 pc。 这个尺度大于常见的巨分子云（例如金牛座分子云，$\sim 20$ pc），表明超新星能量首先注入大尺度的弥散星际介质，然后由这些星际介质作用于分子云。弥散星际介质中的速度弥散和尺度的关系和分子云中相同，这表明分子云和星际介质中湍流运动的耦合尺度可能就是分子云自身的尺度。
+
+Brunt, Heyer, \& Mac Low (2009)使用主成分分析（PCA）方法比较了磁流体力学模拟和真实分子云的观测数据，发现只有大尺度能量注入的模型和观测一致。这些模型对有恒星形成和没有恒星形成的分子云都适用。
+
+
+\section{湍流能量耗散}%\vspace*{1mm}
+\label{sec:dissipation}
+
+\subsection{耗散机制}
+湍流能量耗散可以通过激发分子谱线辐射完成。有计算表明，湍流通过低速激波耗散能量，激发了中阶CO谱线（J=6-5, 5-4, Pon et al. 2014; Larson et al. 2015）。故而中阶CO谱线可能示踪了分子云中的湍流能量耗散。由于分子云中主要成分的辐射难以直接观测，湍流耗散机制远没有明确的结论。
+
+
+\subsection{耗散尺度}
+湍流能量在不同尺度间级联传递，最终在某个尺度耗散。对于二维湍流，能量从小尺度向大尺度传递，而对于三维湍流，能量从大尺度向小尺度传递。通常认为分子云中的湍流是三维的，其能量在小尺度耗散。
+
+已经有对分子云中湍流能量耗散进行观测的尝试。Li \& Houde (2008)尝试通过HCN测量的速度弥散和尺度的关系测量了具有恒星形成活动的分子云M17中的湍流能量耗散尺度。在此项工作并没有观测到预期的速度弥散快速减小的尺度[对应湍流能量耗散尺度，见Li \& Houde (2008) 图3]。为探测到湍流耗散尺度还需要更高分辨率的观测。
+
+事实上，由于天文观测中固有的投影问题，速度弥散和尺度关系在小尺度受到分子云厚度的影响（Qian et al. 2015）。在横向尺度小于分子云厚度时，对速度弥散的贡献主要来自视线方向的气体，如果耗散尺度小于分子云厚度，那么很难通过这种方法探测湍流能量耗散尺度。
+
+\subsection{耗散率}
+湍流的一个基本假设就是在惯性范围（inertial range）内，能量在不同尺度间级联传递，故而湍流能量耗散率和能量传递速率相等。所以只需估计任意尺度的能量传递速率即可得到能量耗散率。
+
+简单的量纲分析表明，能量传递速率$\varepsilon$可以写为（附录A）
+\begin{equation}
+\epsilon\sim \frac{\delta v^3}{l}.
+\end{equation}
+通过拟合数值模拟数据可以确定上式中的比例常数，得到（Mac Low 1999）
+\begin{equation}
+\epsilon=\eta_v \tilde{k}v^3_{\rm rms},
+\end{equation}
+其中常数$\eta_v=0.21/\pi$，$\tilde{k}\propto l^{-1}$是湍流注入的波数，$v_{\rm rms}$是此波数对应区域的速度的均方根。
+
+在实测中可以使用二阶纵向、横向结构函数估计湍流能量耗散率。二阶纵向和横向结构函数分别定义为
+\begin{equation}
+S^2_{ll}(r)=\left\langle \left[u_l(M')-u_l(M)\right]^2\right\rangle,
+\end{equation}
+和
+\begin{equation}
+S^2_{tt}(r)=\left\langle \left[u_t(M')-u_t(M)\right]^2\right\rangle.
+\end{equation}
+二阶纵向结构函数可以表示为（Antonia et al. 1997）
+\begin{equation}
+S^2_{ll}=C_{12}\epsilon^{2/3} r^{2/3},
+\end{equation}
+其中实验测定的$C_{12}\approx 2.12$。由
+\begin{equation}
+S^2_{tt}=\left(1+\frac{r}{2}\frac{\partial}{\partial r}\right)S^2_{ll}
+\end{equation}
+可以将横向结构函数表示为
+\begin{equation}
+S^2_{tt}=\frac{4}{3}C_{12}\epsilon^{2/3} r^{2/3}.
+\end{equation}
+对于面向观测者的薄分子云，横向结构函数可以通过视向速度$v$表示为（Qian \& Li 2016）
+\begin{equation}
+S^2_{tt}=2\langle\delta v^2\rangle,
+\end{equation}
+其中
+\begin{equation}
+\langle\delta v^2\rangle\equiv \frac{\sum_{i> j}\delta v_{ij}^2}{\sum_{i> j} 1}.
+\end{equation}
+所以耗散率可以表示为
+\begin{equation}
+\varepsilon=\frac{1}{L}\left(\frac{\langle\delta v^2\rangle}{\frac{2}{3}C_{12}}\right)^{3/2}.
+\end{equation}
+
+
+\section{湍流的间歇性}%\vspace*{1mm}
+\label{sec:intermittency}
+
+湍流的一个特征是速度场在时间和空间上的间歇性。湍流的间歇性表现为（1）涉及速度梯度、剪切等量的概率分布对高斯分布的偏离；（2）存在具有大涡度的相干结构；（3）高阶结构函数的“非正常”标度律（Hily-Blant, Falgarone \& Pety 2008）。
+
+湍流的间歇性在结构函数的意义上是一种高阶效应。$p$阶（$p\ge 2$）结构函数$S_p(r)$ 定义为
+\begin{equation}
+S_p(r)\equiv \left\langle \left(v(\vec{\mbox{\boldmath$x$}}+\vec{\mbox{\boldmath$r$}})-v(\vec{\mbox{\boldmath$x$}})\right)^p\right\rangle,
+\end{equation}
+其中$r=\left\vert\vec{\mbox{\boldmath$r$}}\right\vert$。结构函数通常为幂律形式，即$S_p(r)\propto r^{\zeta(p)}$柯尔莫格洛夫对无间歇性湍流的理论预言$\zeta(p)=p/3$。 间歇性会导致$\zeta(p)$偏离$p/3$，通常$\zeta(p)<p/3$。描述间歇性的一个最佳模型预言（She \& L\'ev\^eque 1994; Dubrulle 1994；推导见附录B）
+\begin{equation}
+\zeta(p)=p/9+2[1-(2/3)^{p/3}].
+\end{equation}
+这个模型和流体实验符合很好。实测中，通过结构函数研究分子云中湍流的间歇性会受到投影的影响。
+
+Hily-Blant, Falgarone \& Pety (2008)使用重心速度（centroid velocity）增量$\delta C(\mbox{\boldmath$r$},\mbox{\boldmath$l$})\equiv C(\mbox{\boldmath$r$}+\mbox{\boldmath$l$})-C(\mbox{\boldmath$r$})$的概率密度函数（PDF）以及结构函数研究了两块分子云中湍流的间歇性，其中
+\begin{equation}
+C(\mbox{\boldmath$r$})=\int T(\mbox{\boldmath$r$},v)v{\rm d}v/\int T(\mbox{\boldmath$r$},v){\rm d}v
+\end{equation}
+其中$T(\mbox{\boldmath$r$},v)$是$\mbox{\boldmath$r$}$处视向速度$v$处的亮温度。这是一种很有效的统计方法。在小尺度（对于金牛座分子云对应$\sim 0.04~{\rm pc}$，对于北极分子云（Polaris Flare）对应$\sim 0.07~{\rm pc}$） 上湍流具有间歇性。
+
+\section{湍流的各向异性}
+由于分子云中存在磁场，而且有些分子云厚度相比横向尺度较小。这些因素可能导致对通常的三维、各向同性假设的偏离。各向异性会改变湍流的性质，例如各向异性会延缓湍流能量耗散（Hansen et al. 2011）。
+
+%\vspace*{-3mm}
+\section{讨论和展望}%\vspace*{-3mm}
+\label{sec:discussion}
+湍流是经典物理中尚未研究清楚的物理现象，是分子云中的重要过程，是影响恒星形成的重要因素。对分子云中的湍流已取得一些重要结果，但仍有一些问题有待解答。
+
+理论上，湍流能量注入有很多可能机制，数值模拟也表明超新星爆发在分子云湍流能量注入中所起的重要作用。但是分子云所处状态千差万别。有的分子云处于宁静孤立的环境中，自身缺乏明显的恒星形成活动；有的分子云中可以观测到明显的恒星形成活动。不同分子云可能有不同的能量注入机制。湍流能量注入机制可能不唯一。
+
+数值模拟及其与观测的比较给出了一些情况的湍流能量注入尺度，这还需要进行进一步观测检验。一个方法是通过速度弥散和尺度的关系。在能量注入尺度，这个关系会偏离惯性范围的幂律。和耗散尺度不同，由于注入尺度较大，所以分子云的厚度影响相对较小。
+
+速度弥散和尺度的关系原则上也可以用来测量湍流能量耗散尺度。但是由于投影的问题，这会受到分子云厚度的影响，可能导致难以通过这种方法测量能量耗散尺度。由于中阶CO谱线示踪了湍流耗散，有可能通过中阶CO谱线成图观测估计湍流能量耗散尺度。
+
+未来分子云中湍流的研究在已有理论和数值模拟结果的基础上还需要更多大天区、高空间分辨率，即空间动态范围（定义为最大空间尺度$L$和分辨率$\delta L$之比，$ L/\delta L$ ）大的谱线成图数据。这有助于通过速度弥散和尺度的关系确定湍流能量注入尺度，通过结构函数研究湍流的间歇性以及研究湍流的各向异性等。
+
+110米望远镜频段覆盖了一些重要的分子谱线，例如C$_2$H N=1-0（频率为87.3486 GHz）和CO J=1-0（频率为115.271203 GHz）。相比一般毫米波单天线望远镜（FCRAO, IRAM, Nobeyama 等)，110 米望远镜分辨率更高；相比干涉仪，110米望远镜观测不会丢失低空间频率和绝对流量的信息。结合这两个优势，使用110米望远镜进行成图观测，获得的空间动态范围将比此前的研究（Qian et al. 2015）有数倍的提高。这对于研究分子云中湍流的能量注入、能量耗散、间歇性以及各向异性，更深入地了解湍流对分子云能量平衡以及恒星形成过程的影响有重要意义。
+
+\appendix
+\section{$\delta v\sim l^{1/3}$的推导}
+
+假设能量从大尺度传递到小尺度的速率是常量，则
+\begin{equation}
+\frac{\delta v^2}{t}\sim\varepsilon,
+\end{equation}
+由于$l\sim \delta v~t$，故而
+\begin{equation}
+\delta v\sim (\varepsilon l)^{1/3}.
+\end{equation}
+
+\section{$\zeta(p)$的推导}
+
+假设能量传输率$\varepsilon$和速度差$\delta v$的标度律为
+\begin{equation}
+\langle \varepsilon ^p\rangle\sim l^{\tau(p)}~~~~~ \langle \delta v^p\rangle\sim l^{\zeta(p)}.
+\end{equation}
+由
+\begin{equation}
+\delta v\sim (\varepsilon l)^{1/3}
+\end{equation}
+可以得到
+\begin{equation}
+\zeta(p)=\frac{p}{3}+\tau\left(\frac{p}{3}\right)
+\end{equation}
+考虑对数泊松级联模型，假设尺度$l_0$和$l_1$的能量传输速率$\varepsilon_{l_0}$和$\varepsilon_{l_1}$满足
+\begin{equation}
+\varepsilon_{l_1}=W_{l_0l_1}\varepsilon_{l_0},
+\end{equation}
+其中$W_{l_0l_1}=\beta^{m}(l_0/l_1)^{\gamma}$，$m$是分布为
+\begin{equation}
+P(m)=\exp(-\lambda_{l_0l_1})\lambda^m_{l_0l_1}/m!
+\end{equation}
+的泊松随机变量（整数）。由归一化条件
+\begin{equation}
+\langle W_{l_0l_1}\rangle\equiv \sum_{m}W_{l_0l_1}P(m)=1
+\end{equation}
+得到$\lambda_{l_0l_1}=\gamma[\ln(l_0/l_1)]/(1-\beta)$。于是
+\begin{equation}
+\langle W^p_{l_0l_1}\rangle=(l_0/l_1)^{-\tau(p)}
+\end{equation}
+其中$\tau(p)=-\gamma[p-(1-\beta^p)/(1-\beta)]$。由$\tau(0)=\tau(1)=0$（She \& L\'ev\^eque 1994）可得
+\begin{equation}
+\tau(p)=-\frac{2}{3}p+2\left[1-\left(\frac{2}{3}\right)^{p/3}\right].
+\end{equation}
+所以
+\begin{equation}
+\zeta(p)=p/9+2[1-(2/3)^{p/3}].
+\end{equation}
+
+
+%\vspace{1cm}
+%\noindent {\bf致谢} 本工作得到国家重点基础研究发展计划（项目编号：2012CB821800, 2015CB857100）、国家自然科学基金资助项目（项目编号：11373038）、中国科学院战略性先导科技专项（B类）资助（项目编号：XDB09000000）和黔科合人才团队（2013）4021资助。
+
+\end{multicols}
+
+
+
+
+\begin{thebibliography}{40}
+
+%\bibitem{Baron1212} Baron W, Galante D, Schvellinger M, et al. Dynamics of holographic thermalization. J High Energy Phys, 2013, 2013: 70
+
+\bibitem{Antonia1997}
+{Antonia}, R.~A., {Ould-Rouis}, M., {Zhu}, Y., \& {Anselmt}, F. 1997, Europhys. Lett., 37, 85
+
+\bibitem{Balbus1991}
+{Balbus}, S. A., {Hawley}, J. F., 1991, \apj, 376, 214
+
+\bibitem{Blitz1997}
+{Blitz}, L. \& {Williams}, J. 1997, \apj, 488, L145
+
+\bibitem{Brunt2009}
+{Brunt}, C.~M., {Heyer}, M.~H., \& {Mac Low}, M.~M. 2009, A\&A, 504, 883
+
+\bibitem{Dubrulle1994}
+{Dubrulle}, B. 1994, Phys. Rev. Lett., 73, 959
+
+\bibitem{Fleck1981}
+{Fleck}, R.~C., Jr. 1981, \apjl, 246, L151
+
+\bibitem{Gao2015}
+{Gao}, Y., {Xu}, H.~T. \& {Law}, C.~K. 2015, \apj, 799, 227
+
+\bibitem{Hansen2011}
+{Hansen}, C.~E., {McKee}, C.~F., {Klein}, R.~I. 2011, \apj, 738, 88
+
+\bibitem{Hennebelle2012}
+{Hennebelle}, P. \& {Falgarone}, E. 2012, Astronomy and Astrophysics Review, 20, 55
+
+\bibitem{Hily-Blant2008}
+{Hily-Blant}, P., {Falgarone}, E. \& {Pety}, J. 2008, \apj, 481, 367
+
+\bibitem{Hunter1998}
+{Hunter}, D. 1998, PASP, 109, 937
+
+\bibitem{Li2008}
+{Li}, H.~B. \& {Houde}, M. 2008, \apj, 677, 1151
+
+\bibitem{Li2015}
+{Li}, H.~X., {Li}, D., {Qian}, L., {Xu}, D., {Goldsmith}, P.~F., {Noriega-Crespo}, A., {Wu}, Y.~F., {Song}, Y.~Z., {Nan}, R.~D. 2015, \apjs, 219, 20
+
+\bibitem{Klessen1998}
+{Klessen}, R.~S., {Burkert}, A., {Bate}, M. R. 1998, \apj, 501, L205
+
+\bibitem{Frisch1995}
+{Frisch}, U. 1995, Turbulence. The legacy of A.N. Kolmogorov (Cambridge University Press)
+
+\bibitem{Langer1993}
+{Langer}, W.~D. \& {Penzias}, A.~A. 1993, \apj, 408, 539
+
+\bibitem{Larson1981}
+{Larson}, R.~B. 1981, \mnras, 194, 809
+
+\bibitem{Larson2015}
+{Larson}, R.~L., {Evans}, N.~J., II, {Green}, J.~D., {Yang}, Y.~L. 2015, \apj, 806, 70
+
+\bibitem{Li2015}
+{Li}, H.~X., {Li}, D., {Qian}, L.,{Xu}, D., {Goldsmith}, P.~F., {Noriega-Crespo}, A., {Wu}, Y.~F., {Song}, Y.~Z. \& {Nan}, R.~D. 2015, \apjs, 219, 20
+
+\bibitem{Li2008}
+{Li}, H.-B. \& {Houde}, M. 2008, \apj, 677, 1151
+
+\bibitem{MacLow1998}
+{Mac Low}, M.~M., {Klessen}, R.~S., {Burkert}, A., {Smith}, M.~D. 1998, Phys. Rev. Lett., 80, 2754
+
+\bibitem{MacLow1999}
+{Mac Low}, M.~M. 1999, \apj, 524, 169
+
+\bibitem{Padoan2015}
+{Padoan}, P., {Pan}, L., {Haugb\o lle}, T., {Nordlund}, \AA . 2016, \apj, 882, 11
+
+\bibitem{Pon2014}
+{Pon}, A., {Johnstone}, D., {Kaufman}, M.~J., {Caselli}, P., {Plume}, R. 2014, MNRAS, 445, 1508
+
+\bibitem{Qian2012}
+{Qian}, L., {Li}, D. \& {Goldsmith}, P.~F. 2012, \apj, 760, 147
+
+\bibitem{Qian2015}
+{Qian}, L., {Li}, D., {Offner}, S., {Pan}, Z.~C. 2015, \apj, 811, 71
+
+\bibitem{Qian2016}
+{Qian}, L., {Li}, D. 2016, ASPC, 502, 67
+
+\bibitem{She1994}
+{She}, Z.~S. \& {L\'ev\^eque}, E. Phys. Rev. Lett., 72, 336
+
+\bibitem{Solomon_etal1987}
+{Solomon}, P.~M., {Rivolo}, A.~R., {Barrett}, J. \& {Yahil}, A. 1987, \apj,
+  319, 730
+
+\bibitem{Stutzki1988}
+{Stutzki}, J., {Stacey}, G.~J., {Genzel}, R., {Harris}, A.~I., {Jaffe}, D.~T. \& {Lugten}, J.~B. 1988, \apj, 332, 379
+
+\bibitem{Stutzki1990}
+{Stutzki}, J. \& {G\"usten}, R. 1990, \apj, 356, 513
+
+\bibitem{Williams1994}
+{Williams}, J.~P., {De Geus}, E.~J. \& {Blitz}, L. 1994, \apj, 428, 693
+
+
+
+
+\end{thebibliography}
+
+
+
+
+
+%\newpage
+\ \vskip0.40in
+\parbox{15.5cm}{
+
+\renewcommand{\baselinestretch}{1.09} \baselineskip 11pt\parindent=10.8pt
+\begin{center} {\LARGE\bfseries Turbulence in Molecular Clouds} \vspace{8mm}
+
+{\xiaosihao \rm Qian Lei$^{1}$, Li Di$^{1*}$, Pan Zhichen$^{1}$}
+\vspace{3mm}
+
+{\xiaobahao\it {$^1$}\ National Astronomical Observatories, Beijing, 100012, China;}\end{center}\vspace{3mm}
+\renewcommand{\baselinestretch}{1.09} \baselineskip
+10.5pt\parindent=10.8pt
+
+\noindent\bahao{
+%Turbulence is an important process in molecular clouds, playing a critical role in star formation. The studies of turbulence include the studies of energy injection, energy dissipation and intermittency. Turbulence energy injection may come from the shear of galactic disks, gravitational collapse and the feedback of stellar processes. There may not be unique energy injection mechanism. We have not definitely measured the dissipation scale of turbulence. But the turbulence dissipation rate can be determined with observation. Intermittency has been observed in the turbulence of molecular clouds. Large area spectral line mapping of high spatial resolution (e.g., NH$_3$ and CO spectral line mapping with QTT) is needed to study energy injection, intermittency, and anisotropy of turbulence in molecular clouds.
+
+As a fundamental process in molecular clouds, turbulence plays a crucial role in star formation. Important aspects of astrophysical turbulence in molecular clouds include energy injection, energy dissipation, and intermittency. Energy injection for turbulence may come from
+the shear of galactic disks, gravitational collapse, the feedback of stellar processes, and/or a combination of these processes.
+Although the dissipation scale is still to be measured with certainty, the turbulence dissipation
+rate can be determined from observation. Intermittency of turbulence has been observed in molecular clouds. Large
+area spectral line mapping of high spatial resolution (e.g., CCH and CO spectral line mapping with QTT) will further our understanding of
+energy injection, intermittency, and anisotropy of turbulence in molecular clouds.
+
+\vspace{4mm}
+
+
+\noindent\textbf{molecular clouds, turbulence}%关键词
+\vspace{3mm}
+
+\noindent\textbf{PACS:}~ 11.25.Tq,~ 04.70.-s,~ 04.50.Kd
+\vspace{2mm}
+
+\noindent\textbf{doi:}~ 10.1360/SSPMA2014-00482}%关键词
+}
+\end{document}
+
+
+
+
+
+
+\baselineskip 18pt
+\renewcommand{\baselinestretch}{1.2}
+
+
+
+
+
+\end{document}
+
+
+
+
+\textbf{}%黑正
+
+$\mathring{\rm A}$%%%%A上圈
+
+\renewcommand{\arraystretch}{0.9}
+
+ \setlength{\parskip}{-0.1em}
