@@ -1,0 +1,1097 @@
+
+\documentclass[12pt,preprint]{aastex}
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[usenames,dvipsnames]{color}
+
+
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{lqian@nao.cas.cn}
+\renewcommand{\tablename}{\bf{Table}}
+
+\def\arcsec{\hbox{$^{\prime\prime}$}}
+\def\arcmin{\hbox{$^{\prime}$}}
+\def\deg{$^\circ$}
+\def\cm2{cm$^{-2}$}
+\def\cc{cm$^{-3}$}
+\def\kms{kms$^{-1}$}
+\def\s{s$^{-1}$}
+\def\nh3{NH$_3$}
+\def\n2h{N$_2$H$^+$}
+\def\co{$^{12}$CO}
+\def\13co{$^{13}$CO}
+\def\c18o{C$^{18}$O}
+\def\hc3n{HC$_3$N}
+\def\h2{H$_2$}
+\def\nh{n(H$_2$)}
+\def\lp{\>\> .}
+\def\lc{\>\> ,}
+\def\Ms{$M_{\odot}$}
+\def\mic{$\mu$m}
+
+
+
+\begin{document}
+
+\slugcomment{}
+
+\shorttitle{Core mass function}
+\shortauthors{Qian, Li}
+
+\title{Dense Cores in Taurus Molecular Cloud}
+
+
+
+\author{Lei Qian \altaffilmark{1}, Di Li \altaffilmark{1} \altaffilmark{2}, and  Paul F. Goldsmith \altaffilmark{3}}
+\affil{}
+\altaffiltext{1} {National Astronomical Observatories, Chinese Academy of
+Sciences, Beijing, 100012, China}
+\altaffiltext{2} {Department of Astronomy, California Institute of Technology, CA, USA}
+\altaffiltext{3} {Jet Propulsion Laboratory, California Institute of Technology, CA, USA}
+
+\begin{abstract}
+Young stars form in molecular cores, dense condensations
+within molecular clouds. Obtaining the properties of molecular cores
+is important for understanding star formation. We have searched for
+molecular cores traced by $^{13}$CO $J=1\to 0$ emission in the
+Taurus molecular cloud and studied their properties. Our data set
+has a spatial dynamic range of 1000 and spectrally resolved velocity
+information, which together allow a systematic examination of the
+distribution and dynamic state of cores in a large contiguous region.
+The mass function of these cores (core mass function, CMF) can be fitted better with a
+log-normal function  than with a
+power law function. We also examine the CMF in the total integrated
+intensities of $^{13}$CO and 2MASS extinction and find that there is core blending, i.e.\  structures incoherent
+in velocity but continuous in column density. The resulting core samples based on 2D and 3D data thus differ
+significantly from each other. In particular, the
+cores derived from 2MASS extinction can be fitted with a power-law function, but not a log-normal
+function.
+
+The core velocity dispersion (CVD), which is the variance of the core velocity difference $\delta v$,
+exhibits a power-law behavior
+as a function of the apparent separation $L$, i.e.\  CVD (km/s) $\propto L ({\rm pc})^{0.6}$. This is
+similar to Larson's law for the velocity dispersion of the gas. In the map of core velocity difference vs. apparent separation,
+ there is a bimodal
+feature, which can be explained by a simple two-core-cluster model. This  suggests
+that the Taurus molecular cloud consists of two groups of cores.
+The peak velocities of \13co\ cores do not deviate from the centroid
+velocities of the ambient \co\ gas by more than half of the line width. The low velocity dispersion among cores, the close similarity between the length dependence
+of CVD and Larson's law, and the small separation between core centroid velocities and ambient diffuse gas all suggest that dense cores condense out of the diffuse gas without additional energy such as significant feedback from star formation or significant impact from converging flows.
+
+\end{abstract}
+
+
+\keywords{ISM: clouds --- ISM: molecules }
+
+
+\section{Introduction}
+
+Most young stars are found in dense molecular cores~\citep{McKee2007}. There is a
+large volume of data concerning dense molecular cores traced by dust
+emission and dust extinction~\citep{Motte1998,Testi1998,Johnstone2000,Stanke2006,Reid2005,Reid2006,Johnstone2001,Johnstone2006,DCMF_Alves_Lombardi_Lada}.
+One of the primary outcomes of these
+studies is the core mass function (CMF). Because of the still
+unknown physical origin of stellar initial mass function (IMF) and
+its significance, emphasis has been placed on the possible
+connection between the CMF and the IMF~\citep{DCMF_Alves_Lombardi_Lada}.
+
+The construction of an analytic form of the CMF from observational data has
+largely focused on two functional forms, power law and log-normal. The
+majority of past studies claim to find a power law CMF, the shape of
+which resembles the Salpeter IMF~\citep{IMF}
+\begin{equation}
+\frac{{\rm d}N}{{\rm d}\log M} \propto M^{-\gamma},\ \ \gamma=1.35, -0.4\le\log(M/M_{\odot})\le 1.0 \lp
+\label{power_law}
+\end{equation}
+Such a power law CMF was found in millimeter continuum maps of the
+$\rho$ Ophiuchus region by \cite{Motte1998} with the IRAM 30-meter
+telescope and a series of subsequent studies in the Serpens region
+\citep{Testi1998}, the $\rho$ Ophiuchus region
+\citep{Johnstone2000,Stanke2006}, NGC 7538 \citep{Reid2005}, M17
+\citep{Reid2006}, Orion \citep{Johnstone2001,Johnstone2006} and the
+Pipe nebula \citep{DCMF_Alves_Lombardi_Lada}. \cite{Reid2006b}
+studied the CMF in 11 star-forming regions and find an average power
+law index of $\gamma=1.4\pm 0.1$. Recently, dust emission
+observations of the Aquila rift complex with {\it Herschel}
+\footnote{http://www.esa.int/SPECIALS/Herschel/index.html} reveal a power law
+mass function with $\gamma=1.5\pm0.2$,
+for $M>2\ M_{\odot}$~\citep{Aquila_cores}, which is also
+consistent with the Salpeter IMF. A similar power law index is found
+in some molecular emission studies. For example, the CMF obtained from a
+$\rm C^{18}O$ study in the S140 region has $\gamma=1.1\pm
+0.2$~\citep{S140}. On the other hand, there are also studies that
+find a flatter CMF. \cite{Kramer1998} studied seven molecular clouds
+L1457, MCLD 126.6+24.5, NGC 1499 SW, Orion B South, S140, M17 SW,
+and NGC 7538 in $^{13}$CO and C$^{18}$O, and find $\gamma$ to be
+between 0.6 and 0.8. \cite{core_mass_function} studied cores
+in the Orion molecular cloud traced by sub-millimeter continuum and
+found a power law with $\gamma=0.15\pm 0.21$. These findings of
+small $\gamma$ are in the minority and do not seem to be a special result of
+spectroscopic mapping. For example, \cite{Pipe_nebula_improve}
+mapped the Pipe nebula in C$^{18}$O and examined the effects of
+blending of cores in dust maps. They claimed to find a CMF with
+$\gamma$ similar to that of the IMF.
+
+At a first glance, a similarity between the CMF and IMF suggests a
+constant star formation efficiency, which is independent of the core
+mass. It is crucial to note, however, these studies are examining
+structures on vastly different scales of size, mass, and density. In
+\cite{Reid2006}, for example, the mass of the cores ranges from
+about 0.1 $M_{\odot}$ to $1.6\times 10^4M_{\odot}$. Due to the large
+distances of many targeted regions, any "cores" over about 500 \Ms\ are
+certainly unresolved, with many showing signs of much evolved star
+formation, such as water masers \citep{Wang2006} and/or compact HII
+regions \citep{Hofner2002}. The observed similarity between CMF and IMF
+may be explained equally well by self-similar  cloud structures as well as a
+constant star formation efficiency.
+
+Some observations (e.g., \cite{observe_lognormal}) suggest a log-normal form for the CMF (in the mass range of $0.1 M_{\odot}<M<10 M_{\odot}$),
+\begin{equation}
+\frac{{\rm d}N}{{\rm d}\log M} \propto \exp\left[-\frac{(\log M-\mu)^2}{2\sigma^2}\right].
+\label{lognormal}
+\end{equation}
+Theoretically, if the core mass depends on several (say $n$) quantities which are
+random variables, the CMF would be log-normal when $n$ is large,
+i.e., the core formation processes are complicated~\citep{adams1996}. This is a result
+of the central limit theorem. A log-normal distribution  also
+arises naturally from isothermal turbulence~\citep{Larson1973}.
+
+It is thus of great interest to distinguish the two forms of the CMF and
+obtain the key parameters associated with each form.
+\cite{Form_of_CMF} show that a large sample with many cores is needed to differentiate these two forms.
+Furthermore, we also emphasize here the critical need to obtain a large sample of cores in spectroscopic data.
+Overlapping cores along the same line of sight can only be separated using resolved velocity information.
+It is important to evaluate the
+effect of such accidental alignment on the derived CMF.
+A Nyquist sampled continuous spectroscopic map is also essential for
+studying the  dynamical characteristics of star forming regions, such as the Core Velocity Dispersion (CVD $\equiv \langle\delta v^2\rangle^{1/2}$ see section 4.3), of the whole core sample in one star forming region.
+
+The Taurus molecular cloud is a nearby (with a distance of 140 pc,~\cite{Distance}) low-mass
+star-forming region. In this work, we obtain a
+sample of cores in the $^{13}$CO data cube of this region. We study
+the properties of cores in detail and compare them with those found in the
+dust extinction map of the same region.  We first
+briefly describe the data in section \ref{sec:data}; we present the
+methods used to find cores in section
+\ref{sec:methods}; we present the observed CMF and CVD in section
+\ref{sec:results}; we discuss the implications of our observations in section
+\ref{sec:discussion}. In the final section we present our conclusions.
+
+\section{The Data}
+\label{sec:data}
+
+In this work, we use $^{12}$CO and $^{13}$CO data in the form of x-y-v cube of
+the Taurus molecular cloud as observed with the 13.7 m FCRAO telescope
+\citep{Taurus_CO} and the 2MASS extinction map of the same region
+\citep{2MASS}. The $^{12}$CO and $^{13}$CO lines were observed
+simultaneously between  2003 and 2005. The map is centered
+at $\alpha(2000.0)=04^h 32^m 44.6^s$, $\delta(2000.0)=24^\circ 25'
+13.08''$, with an area of $\sim 98\ \rm deg^2$. The FWHM beam width
+of the telescope is $45''$ at 115 GHz. The angular spacing of the resampled
+on the fly (OTF) data is 20'' \citep{Goldsmith2008}, which corresponds to
+a physical scale of $\approx 0.014\rm\ pc$ at a distance of $D=140\
+{\rm pc}$. There are 80 and 76 velocity channels in
+the $^{12}$CO and $^{13}$CO data cube, respectively. The width of a velocity
+channel is $V_{\rm ch}=0.266 \rm\ km/s$. The extinction map has a
+pixel size of about 5 times that of the CO data cube with, of course, no
+velocity information.
+
+\section{Core Extraction}
+\label{sec:methods}
+
+Dense cores can be defined empirically as regions with concentrated,
+enhanced intensity in a data cube or a map. We empirically assume
+an ellipsoidal shape for a dense core and use the FINDCLUMPS tool in the
+CUPID package, which is a part of the starlink
+software\footnote{http://starlink.jach.hawaii.edu/starlink/}. We
+have tried two methods in the FINDCLUMPS tool, GAUSSCLUMPS and
+CLUMPFIND. GAUSSCLUMPS searches for an ellipsoid with Gaussian
+density profile around the brightest peak and subsequently
+subtracts it from the data. It then continues the process with the core-removed data, iterating successively until a
+terminating criterion is reached.
+CLUMPFIND identifies cores by drawing
+enclosing contours around intensity peaks without assuming the shape
+of cores a priori. Unlike GAUSSCLUMPS, CLUMPFIND cannot deconvolve
+overlapping cores.
+
+For fitted ellipsoids of revolution, the core radius is defined as the geometrical mean of
+the semi-major and the semi-minor axes
+\begin{equation}
+R \equiv (R_{\rm max}R_{\rm min})^{1/2}.
+\end{equation}
+We take the observed size $R$ as a typical scale of a core,
+although projection may affect the observed size of the core.
+
+Following the instructions for CUPID, we first subtract the background
+by using FINDBACK. Some studies of the Taurus molecular cloud find a
+characteristic length scale of about $0.5 {\rm pc}\sim 2{\rm pc}$,
+at which self-similarity breaks down and gravity becomes important
+\citep{not_fractal}. This length scale corresponds roughly to
+$35\sim 140$ pixels in the $^{13}$CO data cube, and to $7\sim 28$ pixels in the extinction map. We set the smoothing
+scale to 127 pixels in each axis for
+the $^{13}$CO data cube, and 25 pixels for the extinction map,
+both are close to the upper value of the scale at which the
+self-similarity breaks down.
+
+
+After background subtraction, we use the GAUSSCLUMPS method of the
+FINDCLUMPS tool to fit Gaussian components in the $^{13}$CO data cube
+, which are identified as cores. Since the data cube is
+large, running the 3D-Gaussian fitting on the whole data cube is time-consuming.
+Furthermore, the background
+differs substantially between different parts of the Taurus cloud. The noise
+level (parameter RMS) also differs among different regions. Therefore,
+the data cube is divided into several sections in the x-y plane as
+shown in figure \ref{fig1} to make the sizes of data sets suitable to
+handle, and to minimize the variation of the background and the noise level.
+The fitting parameters are given in table~\ref{gaussclumpspara}.
+
+\begin{table}[htb]
+\begin{center}
+\caption{Parameters used in the GAUSSCLUMPS fitting of the $^{13}$CO data cube.\label{gaussclumpspara}}
+\begin{tabular}{|c|c|}
+\hline \hline  Parameter & Value \\
+\hline
+WWIDTH      & 2  \\\hline
+WMIN        & 0.01 \\\hline
+MAXSKIP     & 100  \\\hline
+THRESH      & 5 \\\hline
+NPAD        & 100  \\\hline
+MAXBAD      & 0.10  \\\hline
+VELORES     & 2  \\\hline
+MODELLIM    & 0.05  \\\hline
+MINPIX      & 16  \\\hline
+FWHMBEAM    & 2  \\\hline
+MAXCLUMPS   & 2147483647  \\\hline
+MAXNF       & 200  \\\hline
+\hline
+\end{tabular}
+\end{center}
+\footnotesize \it
+{\rm\bf WWIDTH} is the ratio of the width of the weighting function (which is a Gaussian function) to
+the width of the initial guessed Gaussian function.
+
+{\rm\bf WMIN} specifies the minimum weight. Pixels with weight smaller than this value are not included
+in the fitting process.
+
+{\rm\bf MAXSKIP}: If more than "{\rm\bf MAXSKIP}"  consecutive cores cannot be fitted, the iterative fitting
+process is terminated.
+
+{\rm\bf THRESH} gives the minimum peak amplitude of cores to be fitted by the GAUSSCLUMPS algorithm. The supplied value
+is multipled by the {\rm\bf RMS} noise level before being used.
+
+{\rm\bf NPAD}: The algorithm will terminate when "{\rm\bf NPAD}"  consecutive cores have been fitted all of
+which have peak values less than the threshold value specified by the "{\rm\bf THRESH}" parameter. (From the source code cupidGaussClumps.c,
+one can see that the algorithm will do the same thing when "{\rm\bf NPAD}" consecutive cores have pixels fewer than
+"MINPIX".)
+
+{\rm\bf MAXBAD}: The maximum fraction of bad pixels which may be included in a core. Cores will
+be excluded if they contain more bad pixels than this value.
+
+{\rm\bf VELORES}: The velocity resolution of the instrument, in channels.
+
+{\rm\bf MODELLIM}: Model values below ModelLim times the RMS noise are treated as zero.
+
+{\rm\bf MINPIX}: The lowest number of pixel which a core can contain.
+
+{\rm\bf FWHMBEAM}: The FWHM of the instrument beam, in pixels.
+
+{\rm\bf MAXCLUMPS}: The upper limit of the cores to be fitted. Set to a large number so this parameter do not take effect.
+
+{\rm\bf MAXNF}: The maximum number of evaluations of the objective function allowed when fitting an individual core. Here it is just set to a very
+large number to guarantee all the cores to be fitted.
+\end{table}
+
+
+
+
+FINDCLUMPS  outputs the total  intensity, $T_{\rm tot}$, through
+the summation of all pixels in each fitted core. We then calculate the
+mass of a core based on $T_{\rm tot}$. The central frequency of
+$^{13}$CO $J=1\to 0$ line $\nu$ is 110.2 GHz. The column density of \13co\ in the
+upper-level ($J=1$) can be expressed as~\citep{RadioTool}
+\begin{equation}
+N_{u,^{13}\rm CO}=\frac{8\pi k\nu^2}{hc^3 A_{ul}}\int T_b {\rm d}v
+\lc
+\end{equation}
+where $k$ is Boltzmann's constant, $h$ is Planck's constant, $c$ is the speed of light, $A_{ul}$
+is the spontaneous  decay rate from the upper level to the lower level, and $T_b$ is the brightness temperature.
+A convenient form of this equation is
+\begin{equation}
+\left(\frac{N_{u,^{13}\rm CO}}{\rm cm^{-2}}\right)=3.04\times 10^{14}\int \left(\frac{T_b}{K}\right) {\rm d}\left(\frac{v}{\rm km/s}\right) \lp
+\end{equation}
+The total \13co\ column
+density $N_{\rm tot}$ is related to the upper level column density
+$N_{u}$ through \citep{Di_Li_Thesis}
+\begin{equation}
+N_{\rm tot, ^{13}CO}=f_{u} f_{\tau} f_b N_{u,\rm ^{13}CO} \lp
+\end{equation}
+In the equation above, the level correction factor $f_u$ can be
+calculated analytically under the assumption of local thermal
+equilibrium (LTE) as
+\begin{equation}
+f_{u}=\frac{Q(T)}{g_u \exp\left(-\frac{h\nu}{kT_{\rm ex}}\right)} \lc
+\end{equation}
+where $g_u$ is the statistical weight of the upper-level. $T_{\rm
+ex}$ is the excitation temperature and $Q(T)=kT/B_e$ is the LTE
+partition function, where $B_e$ is the rotational constant
+\citep{Astrospec}. A convenient form of
+the partition function is then $Q(T)\approx T_{\rm ex}/2.76\rm K$.
+The correction factor for opacity is defined as
+\begin{equation}
+f_{\tau}=\frac{\int\tau_{13}dv}{\int(1-e^{-\tau_{13}}){\rm d}v} \lc
+\end{equation}
+and the correction for the background
+\begin{equation}
+f_b=\left[1-\frac{e^{\frac{h\nu}{kT_{\rm
+ex}}}-1}{e^{\frac{h\nu}{kT_{\rm bg}}}-1}\right]^{-1} \lc
+\end{equation}
+where $\tau_{13}$ is the opacity of the $^{13}$CO transition and
+$T_{\rm bg}$ is the background temperature, assumed to be 2.7K.
+
+The \13co\ opacity is estimated as follows. Assuming equal excitation temperature for the two
+isotopologues, the ratio of the brightness temperature of $^{12}$CO to that of $^{13}$CO
+can be written as
+\begin{equation}
+\frac{T_{12}}{T_{13}}=\frac{1-e^{-\tau_{12}}}{1-e^{-\tau_{13}}} \lp
+\end{equation}
+Assuming $\tau_{12}\gg 1$, the opacity of $^{13}$CO can be written as
+\begin{equation}
+\tau_{13}=-\ln\left(1-\frac{T_{13}}{T_{12}}\right) \lp
+\end{equation}
+
+
+The excitation temperature $T_{\rm ex}$ is obtained from the $^{12}$CO
+intensity. First, the maximum intensity in the spectrum of each
+pixel is found. This
+quantity is denoted by $T_{\rm max}$. The excitation
+temperature is calculated by solving the following equation
+\begin{equation}
+T_{\rm max}=\frac{h\nu}{k}\left[\frac{1}{e^{\frac{h\nu}{kT_{\rm
+ex}}}-1}-\frac{1}{e^{\frac{h\nu}{kT_{\rm bg}}}-1}\right] \lc
+\end{equation}
+where $h$, $k$ and $\nu$ are Planck's constant, Boltzmann's constant,
+and the central frequency of $^{12}$CO $J =1\to 0$ line (115.27 GHz), respectively.
+
+The total number of H$_2$ molecules in a core is
+\begin{equation}
+\Sigma_{\rm H_2}=\frac{N_{\rm tot, ^{13}CO}(D\Delta)^2}{[^{13}\rm
+CO]/[\rm H_2]} \lc
+\end{equation}
+where the distance of the Taurus molecular cloud, $D=140\ {\rm pc}$, the pixel size of the data cube, $\Delta=20''$,
+the $^{13}$CO to H$_2$ abundance ratio $[^{13}\rm
+CO]/[\rm H_2]$ is taken to be $1.7\times 10^{-6}$~\citep{CO_H_ratio_2}.
+Calculation of the mass of the core is then straightforward
+\begin{equation}
+M=\beta m_{\rm H_2}\Sigma_{\rm H_2}
+\end{equation}
+where $\beta =1.39 $  converts the hydrogen mass to total mass taking into account of Helium~\citep{Wilson1994}.
+
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{overlay.eps}
+\caption{ Image showing the total intensity of the $^{13}$CO emission
+in Taurus region. The data are divided into 18 regions for core
+fitting. The cores found by fitting the \13co\ data cube $(x,y,v)$ are shown as green ellipsoids. Despite the strong \13co\ emission, no
+cores are found in region 11, and only one core is found in region 5.
+This can be understood by looking at the channel maps (see discussion in section 3).
+ \label{fig1}}
+\end{figure}
+
+
+The FWHM line width $\Delta V_{\rm FWHM}$ is calculated from the velocity
+dispersion of each core, $\Delta v$, which is the standard deviation of the velocity value about centroid velocity, weighted
+by the corresponding pixel data value.
+\begin{equation}
+{\Delta V_{\rm FWHM}}=2\sqrt{2\ln 2}\Delta v \lp
+\end{equation}
+The virial mass is also estimated from $\Delta v$ \citep{Pressure_confine}
+\begin{equation}
+M_{\rm vir}=\frac{5\Delta v^2 R}{G}\lp
+\label{virial_mass}
+\end{equation}
+This equation describes a balance between the self gravity and combined thermal and
+nonthermal motions of a core, neglecting external pressure and the magnetic field.
+In a core with mass larger than its virial mass, self gravity dominates the thermal and turbulent motion, meaning that
+this core is gravitationally bound.
+
+
+In dealing with extinction map, the hydrogen column density is estimated from optical extinction \citep{extinction_column}
+\begin{equation}
+\frac{N_{\rm H}}{\rm cm^{-2}}=2.2\times 10^{21} \left(\frac{A_V}{\rm mag}\right).
+\end{equation}
+We have applied GAUSSCLUMPS to the Taurus
+region to extract cores. The fitting parameters are listed in
+table~\ref{extinctionpara}.
+
+\begin{table}[htb]
+\begin{center}
+\caption{Parameters used in the GAUSSCLUMPS fitting (the extinction map).\label{extinctionpara}}
+\begin{tabular}{|c|c|}
+\hline \hline  Parameter & Value \\
+\hline
+WWIDTH      & 2  \\\hline
+WMIN        & 0.05  \\\hline
+MAXSKIP     & 50  \\\hline
+THRESH      & 5  \\\hline
+NPAD        & 50  \\\hline
+MAXBAD      & 0.05  \\\hline
+VELORES     & 2  \\\hline
+MODELLIM    & 0.05  \\\hline
+MINPIX      & 16  \\\hline
+FWHMBEAM    & 2  \\\hline
+MAXCLUMPS   & 2147483647  \\\hline
+MAXNF       & 200  \\\hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+In CUPID package, there are some methods other than GAUSSCLUMPS. We have tried the fitting with CLUMPFIND method.
+The fitting with CLUMPFIND is different from that with GAUSSCLUMPS. CLUMPFIND can only attribute a specific pixel to a particular core.
+In other words, CLUMPFIND cannot split a pixel.
+
+As in the case of GAUSSCLUMPS, we first subtract background with FINDBACK with the same parameters before core searching
+with CLUMPFIND. The parameters of CLUMPFIND can be read in table~\ref{clumpfindpara}.
+
+
+\begin{table}[htb]
+\begin{center}
+\caption{Parameters used in the CLUMPFIND fitting ($^{13}$CO data cube). \label{clumpfindpara}}
+\begin{tabular}{|c|c|}
+\hline \hline  Parameter & Value \\
+\hline
+DELTAT      & 5.0*RMS  \\\hline
+FWHMBEAM    & 2.0     \\\hline
+MAXBAD      & 0.05    \\\hline
+MINPIX      & 16      \\\hline
+NAXIS       & 3       \\\hline
+TLOW        & 5*RMS   \\\hline
+VELORES     & 2.0     \\\hline
+\hline
+\end{tabular}
+\end{center}
+\footnotesize \it
+\end{table}
+
+
+The fitted cores can be seen in figure~\ref{overlay_cl}, with the background map the same as figure~\ref{fig1}. Comparing with Gaussian fit by GAUSSCLUMPS,
+there are much more smaller cores found by CLUMPFIND, especially in the relatively diffuse region, as can be seen in figure~\ref{overlay_cl}.
+\begin{figure}[htb]
+\includegraphics[width=18cm]{overlay_cl2.eps}
+\caption{ The cores found with CLUMPFIND routine are overlayed on the \13co\ total intensity map. It is clear
+from this figure that the cores are much smaller than those found by Gaussian fit.
+ \label{overlay_cl}}
+\end{figure}
+
+
+Since CLUMPFIND cannot split overlapping cores, we rely on the cores found by GAUSSCLUMPS in the subsequent analysis.
+
+Some basic parameters of 3D \13co\ cores and those cores found in the smoothed \13co\ data cube
+can be found in tables~\ref{tab:clumps} and~\ref{tab:clumps_smooth}, with the first column being the identifier of each core.
+The second to the sixth columns are the right ascension, declination, semi-major axis,
+semi-minor axis and position angle of the cores. The position angle is defined as the angle (clockwise)  between the major axis of the cores and the north celestial pole. The seventh column is the $^{12}$CO peak temperature of the gas in each of the cores. The last two columns are the virial mass and the FWHM
+in velocity.
+
+In table \ref{tab:clumpsEx}, we give some basic parameters of the cores derived from the 2MASS extinction map. The first column is the identifier of each core, followed by the right ascension, declination, semi-major axis,
+semi-minor axis and position angle of the core. The seventh column gives the mass of each core.
+
+
+
+
+
+
+\section{Results}
+\label{sec:results}
+
+From the GAUSSCLUMPS fitting, we select cores with peak intensity
+higher than $5\sigma\sim 0.27$K for $^{13}$CO data and $9\sigma\sim
+1.0$ mag for the extinction map, where $\sigma$ is the variance of
+data (the RMS). Other fitting parameters can be found in
+tables~\ref{gaussclumpspara}, \ref{extinctionpara}, and
+\ref{clumpfindpara}. Some filamentary structures (ellipses with a
+large axis ratio) were found in both the extinction map and the
+$^{13}$CO total intensity map, including only a small fraction of
+the total mass (less than 10\%). They do not show up in the fitting
+to the $^{13}$CO data cube, which means they are not coherent in
+velocity, i.e.\, the velocity variation within the structure cannot be described by
+a Gaussian in velocity space. We filter out those cores that have an unphysically large
+axis ratio (major/minor $>$10) in the analysis.
+
+Figure~\ref{fig1} shows the $^{13}$CO integrated intensity map overlayed with the cores obtained by Gaussian fitting to the $^{13}$CO data cube.
+Most of the regions with \13co\ emission are found to contain cores. However, despite the strong \13co\ emission  in region 11 and 5, no core is found in the former and only one core is found in the latter. This is due to
+the rapid variation of intensity between velocity channels, which is clear in figures~\ref{channel} and~\ref{channel3},
+which are the channel maps of region 11 and region 5, respectively.
+Gas in region 11 is likely to be affected by the young protostellar cluster  within it~\citep{L1495_B10}.
+In contrast to these two regions, the \13co\ emission in all other regions containing cores is found to change gradually in velocity (see, e.g.\ figure~\ref{channel2}).
+
+\begin{figure}[htb]
+\begin{tabular}{c}
+\includegraphics[width=18cm]{15_2_back.eps}\\
+\end{tabular}
+\caption{Channel maps of the region 11 in figure~\ref{fig1}. The intensity changes drastically between channels, which is
+in stark  contrast with the region shown in  figure~\ref{channel2} and suggests velocity incoherence in region 11. This is the reason why no core can
+be fitted by a three dimensional gaussian in this region. \label{channel}}
+\end{figure}
+
+
+\begin{figure}[htb]
+\begin{tabular}{c}
+\includegraphics[width=18cm]{6_9_12_back.eps}\\
+\end{tabular}
+\caption{Channel maps of region 5 in figure~\ref{fig1}. The intensity also changes drastically between channels. Only one core is found in this region.  \label{channel3}}
+\end{figure}
+
+\begin{figure}[htb]
+\begin{tabular}{c}
+\includegraphics[width=18cm]{15_1_back.eps}\\
+\end{tabular}
+\caption{Channel maps of region 10 in figure~\ref{fig1}. The main features are coherent through multiple channels.
+Many cores are found in this region. \label{channel2}}
+\end{figure}
+
+Figure~\ref{overlay2} shows the $^{13}$CO integrated intensity map overlaid with cores obtained by Gaussian fit of the $^{13}$CO integrated intensity map,
+which is a 2D core fitting. Compared with the 3D core fitting to the \13co\ data cube, there are cores found in the 2D core fitting
+within the regions having relatively abrupt, significant velocity variations seen in the \13co\ data.
+This indicates that line velocity is powerful additional information for defining cores in a complex cloud
+such as Taurus. The physical plausibility of requiring that a core have a relatively well-defined velocity
+in additional to a compact spatial structure eliminates many spurious cores that are
+identified with 2D data alone.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{overlay2.eps}
+\caption{ The cores found through a 2D Gaussian fitting of the \13co total intensity map are overlaid on the $^{13}$CO total intensity map of the whole Taurus region. The red dashed lines are the coordinate lines of constant right ascension and declination.\label{overlay2}}
+\end{figure}
+
+Figure~\ref{overlayEx} shows dust extinction map overlayed with cores obtained by Gaussian fit to the 2MASS extinction map. The 200\arcsec\ spatial resolution of
+2MASS extinction map is about 5 times coarser than that of \13co\ map. The extinction cores are generally larger than those found in \13co\ data.
+We perform an experiment by smoothing the \13co\ data to the same spatial resolution as 2MASS extinction and perform the core fitting. The fitted cores are
+also generally larger than those found in the original \13co\ data, confirming that the cores found in the 2MASS data are  generally unresolved even at the
+modest distance of Taurus (see table~\ref{tab:clumps_smooth}).
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{overlayEx.eps}
+\caption{ The cores found through a 2D Gaussian fitting of the extinction map are overlaid on the dust extinction map of the whole Taurus region.  They are generally larger than the \13co\ cores. The red dashed lines are the coordinate lines of constant right ascension and declination. \label{overlayEx}}
+\end{figure}
+
+
+
+
+\subsection{Mass distribution of the cores}
+
+We analyze the CMF in two functional forms, power law (equation~\ref{power_law}) and log-normal (equation~\ref{lognormal}).
+Direct fitting of power laws to a cumulative mass function can be erroneous due to the natural curvature in the cumulative CMF
+(see the appendix in~\cite{core_mass_function}).
+Therefore, we adopt a Monte Carlo approach similar to that used in ~\cite{core_mass_function}.
+We first generate a random sample of cores with one of the above distributions. For a power law distribution, there are three parameters,
+$M_{\rm max}$, $M_{\rm min}$, and $\gamma$, while for a log-normal distribution, there are two, $\sigma$ and $\mu$.
+The cumulative distribution $C(M_i),\ i=1,...,n$ of the random sample is then fitted to that of the sample found in the data
+$C_0(M_i),\ i=1,...,n$ by minimizing a $\chi^2$ function defined by
+\begin{equation}
+\chi^2\equiv \sum_{i=1}^{n}\frac{[C(M_i)-C_0(M_i)]^2 m_i^2}{C_0(M_i)^2},
+\end{equation}
+where $m_i\equiv M_i/M_{\rm median}$ is the dimensionless mass of the cores, scaled by the median core mass. The cumulative distribution of a sample $\{M_1\le M_2\le ...\le M_n\}$ is defined as the
+fraction of cores with mass lower than $M$.
+The above $\chi^2$ function has been weighted by the core mass. We do this for two reasons.
+First, the mass of massive cores is
+measured with better signal to noise ratio.
+Second, the number of massive cores is relatively small.
+Thus, the placement of massive cores has a larger effect on the shape of the CMF.
+The resulting mass function of the $^{13}$CO cores can be seen in figure~\ref{massfunction}.
+This mass distribution can be fitted much better by a log-normal function than by a power law.
+The fitting results are different for cores based on 2D fitting. The CMF of
+2MASS extinction cores cannot be fitted by a lognormal function, but are shown to follow a
+power law flatter than the IMF (figure~\ref{massfunction2}). The lower mass end of the CMF that is based on 2D fitting of the $^{13}$CO
+integrated intensity cannot be  fitted by either a single power law or a lognormal function.
+Because of the various caveats of 2D fitting, the CMF based on $^{13}$CO data cube should be
+a better representation of the true core mass distribution.
+
+To examine the reliability and the completeness of the cores found, we calculate the minimum detectable mass for a core of certain size \citep{core_mass_function}
+\begin{equation}
+M=M_{\rm point}\times\sqrt{N}\times\sqrt{M},
+\end{equation}
+where $M_{\rm point}$ is the minimum detectable mass of a point source, and $N$ and $M$ are the number of pixels and number of velocity channels
+occupied by a core, respectively.
+We found this minimum detection mass is about 0.03 $M_{\odot}$ for a core as large as the smoothing scale,
+occupying all $M$ velocity channels. All the cores found in the $^{13}$CO data cube are larger than this minimum mass.
+For the extinction map, the minimum detectable mass of a core is found to be about 0.8 $M_{\odot}$.
+
+
+\begin{figure}[htb]
+\begin{tabular}{cc}
+\includegraphics[width=8cm]{massfunction.eps} & \includegraphics[width=8cm]{massfunction_lognormal.eps}\\
+\end{tabular}
+\caption{ The mass distribution of the cores found by using GAUSSCLUMP fitting to the $^{13}$CO data cube.
+The left panel shows the best fit power law distribution, while the right panel shows the best fit log-normal distribution.
+The minimum detection mass for the $^{13}$CO cube is $0.03M_{\odot}$, indicated by the vertical dash-dotted line.
+We have fitted the mass function to cores more massive than the minimum detection mass.
+The fitting results are :
+(a) power-law distribution with $dN/d\log M\propto M^{-0.18}$, $M_{\rm max}=1.63 M_{\odot}$, $M_{\rm min}=0.15$.
+(b) log-normal distribution with $\mu=0.32$, $\sigma=1.36$.
+\label{massfunction}}
+\end{figure}
+
+\begin{figure}[htb]
+\begin{tabular}{cc}
+\includegraphics[width=8cm]{massfunction2.eps} & \includegraphics[width=8cm]{massfunction2_lognormal.eps}\\
+\includegraphics[width=8cm]{massfunctionEx.eps} & \includegraphics[width=8cm]{massfunctionEx_lognormal.eps}\\
+\end{tabular}
+\caption{ The mass distribution of the cores found by GAUSSCLUMP fitting to the $^{13}$CO total intensity map ({\it upper}) and to the extinction map ({\it lower}).
+The panels on the left are fitted with power law distributions, while those on the right are fitted with log-normal distributions. The minimum detection masses are $0.03M_{\odot}$ and $0.8 M_{\odot}$ for the $^{13}$CO data cube and the extinction map, respectively. They are indicated by vertical dash-dotted lines.
+The fitting results are:
+(a) $dN/d\log M\propto M^{-0.26}$, $M_{\rm max}=1.33 M_{\odot}$, $M_{\rm min}=0.12$.
+(b) log-normal distribution with $\mu=-0.38$, $\sigma=0.95$.
+(c) $dN/d\log M\propto M^{-0.95}$, $M_{\rm max}=1.54 M_{\odot}$, $M_{\rm min}=0.53$.
+(d) log-normal distribution with $\mu=0.54$, $\sigma=0.3$.
+The extinction cores are well fitted by a power-law, but not by a log-normal distribution.
+\label{massfunction2}}
+\end{figure}
+
+We used bootstrapping to estimate the uncertainty of the fitting. The resulting uncertainty is extremely small
+when the sample size is large. This means that the statistical uncertainty in our Monte-Carlo type fitting procedures is negligible. The difference between the fitted function and the data has to be systematic.
+For this reason, we do not show the numerical values of the uncertainties.
+
+
+\subsection{Energy State of Cores}
+We study the energy state of cores by analyzing the mass and line width together, which can only be accomplished through spectral maps.
+The properties of the 10 most massive cores are listed in tables \ref{tab:clumps} and \ref{tab:clumpsEx},
+which are for the $^{13}$CO data cube and the total intensity map, respectively.
+
+\begin{figure}[htb]
+\centering
+\begin{tabular}{c}
+\includegraphics[width=12cm]{M_r3D.eps}\\
+\end{tabular}
+\caption{ The mass-size relation of the cores found by GAUSSCLUMPS in the $^{13}$CO data cube. The Bonnor-Ebert mass is indicated by the dashed lines.
+The upper line corresponds to temperature $T=20\rm K$ and the lower line corresponds to $T=10\rm K$.The mass-size relation is best fitted as $M\propto R^{2.4}$.
+Cores with virial mass to mass ratio
+$M_{\rm vir}/M<2$ are denoted by blue diamonds; those with $2\le M_{\rm vir}/M<5$ are denoted by green diamonds; other cores with $M_{\rm vir}/M>5$ are denoted by black diamonds.\label{mass_radius}}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\begin{tabular}{c}
+\includegraphics[width=12cm]{M_rEx.eps}\\
+\includegraphics[width=12cm]{M_r2D.eps}\\
+\end{tabular}
+\caption{ The relations between the mass and size of the cores found in the extinction map (a) and in the $^{13}$CO total intensity map (b) with GAUSSCLUMPS.
+(a) Cores found in the extinction map. The mass-size relationship is best fitted with a power law $M\propto R^{3.0}$.
+(b) Cores found in the $^{13}$CO total intensity map can be fitted with power law $M\propto R^{2.4}$. The Bonnor-Ebert mass is indicated by the dashed lines. The upper line corresponds to temperature $T=20\rm K$ and the lower line corresponds to $T=10\rm K$.
+\label{mass_radius2}}
+\end{figure}
+
+
+We investigate the mass-radius relation of the cores, which can be seen in figures~\ref{mass_radius} and ~\ref{mass_radius2}.
+The core stability is studied by calculating the
+Bonnor-Ebert mass-radius relation \citep{core_mass_function}, in which the Bonnor-Ebert mass is obtained from integration to the density profile of
+the Bonnor-Ebert sphere
+\begin{equation}
+\rho(\xi)=\frac{1}{1+(\xi/2.25)^{2.5}}\lc
+\label{beprofile}
+\end{equation}
+where the dimensionless radius $\xi$ is defined as
+\begin{equation}
+\xi=r\sqrt{4\pi G\rho_c/v_s^2} \lc,
+\end{equation}
+where $\rho_c$ is the central density, $v_s$ is the sound speed that is related to the temperature as $v_s=(kT/\mu m_{\rm H})^{-1/2}$.
+When $\xi$ is larger than $\xi_{\rm}=6.5$, there is no longer any stable solution. With $\xi_{\rm max}$ and the size of a core,
+the central density $\rho_{c}$
+is determined. The critical mass is then calculated by integration to the density profile (equation \ref{beprofile}).
+Since the upper limit and the lower limit of the integration are constants, it is straightforward to show that the Bonnor-Ebert mass
+$M_{\rm BE}\propto r$.
+
+As can be seen in figure~\ref{mass_radius}, only a fraction (56\% if the temperature of
+the ambient medium is 10K, 23\% for 20K) of the cores are more massive than than their Bonnor-Ebert mass and are thus hydrostatically unstable. This is in contrast to those cores found in Orion, which are mostly supercritical~\citep{core_mass_function}. We have studied the mass
+distribution of hydrostatically unstable cores and find that they can also be fitted extremely well with a log-normal function with $\mu=1.46$, $\sigma=0.54$ (see figure~\ref{massfunction_be}). The mass function of unstable cores bear
+apparent closer relationship to IMF than CMF of the general population. The fact that a lognormal function can still fits them better than an IMF type power suggests that the mass conversion efficiency is NOT constant for all cores.
+
+\begin{figure}[htb]
+\begin{tabular}{cc}
+\includegraphics[width=8cm]{massfunction3.eps} & \includegraphics[width=8cm]{massfunction_lognormal3.eps}\\
+\end{tabular}
+\caption{ The mass distribution of those cores found in $^{13}$CO cube with mass larger than the Bonnor-Ebert mass.
+The fitting results are listed as following:
+(a) $dN/d\log M\propto M^{-1.36}$, $M_{\rm max}=1.96 M_{\odot}$, $M_{\rm min}=1.16$.
+(b) log-normal distribution with $\mu=1.46$, $\sigma=0.54$.
+\label{massfunction_be}}
+\end{figure}
+
+We also examine the virial mass of the cores according to Equation \ref{virial_mass}.
+Among the cores, there are 67 cores out of 664 that are nearly gravitationally
+bound (with the virial parameter $M_{\rm vir}/M<2$, see equation~\ref{virial_mass}).
+The pressure from the surrounding materials also serves as an additional confinement to that provided by the self-gravity of a core.
+Effectively, the external pressure confinement reduces the virial mass of a core. We can define an effective mass corresponding to the pressure
+by calculating the square of the effective velocity dispersion
+\begin{equation}
+\Delta V_{\rm eff}^2\equiv \frac{P_{\rm ext}}{\rho_{\rm core}}=\frac{kT_{\rm ext}}{m_{\rm H_2}}\frac{\rho_{\rm ext}}{\rho_{\rm core}}\lc
+\end{equation}
+where $T_{\rm ext}$ is the temperature of the ambient medium. An effective mass is then defined analogously to the virial mass
+\begin{equation}
+M_{\rm eff}=\frac{f\Delta V_{\rm eff}^2 R}{G}=\frac{fkT_{\rm ext}R}{m_{\rm H_2}G}\frac{\rho_{\rm ext}}{\rho_{\rm core}}
+=4.8\left(\frac{f}{5}\right)\left(\frac{R}{0.1\rm pc}\right)\left(\frac{T_{\rm ext}}{10\rm K}\right)\left(\frac{\rho_{\rm ext}}{\rho_{\rm core}}\right)M_{\odot}\lc
+\end{equation}
+where $f$ is a dimensionless factor. For cores of the same mass, the pressure is a more important factor for the confinement of the less dense cores.
+The external pressure may be negligible for the confinement of a dense core, for example, considering a core with $\rho_{\rm ext}/\rho_{\rm core}\sim 1/100$, the effective mass would be about 0.05 $M_{\odot}$, which is negligible for a core having a total mass $\geq$ 1 M$_{\odot}$. The pressure is then unimportant for the confinement
+of massive cores, but is important for a core having total mass $\lesssim$ 0.1 M$_{\odot}$.
+
+
+\subsection{The Motion of Cores}
+
+We have investigated the distribution and the motion of the cores. The cores are shown in figure~\ref{overlay_velocity} with the fitted centroid radial
+velocity coded in color. In general, the separation between the velocity of the core and that of the ambient gas is small. As seen in figure~\ref{overlay_velocity2},
+the core centroid velocities are also mostly similar.
+However, the velocities of the cores seen in the lower right corner of this figure
+differ systematically from those in other regions.
+After excluding these cores, we plot the velocity difference $\delta v$ vs. the apparent separation $L$ of the cores in figure~\ref{vdis_all}.
+
+Between the 664 cores there are $664\times(664-1)$ pairs of core differences, which are all shown as the background density distribution in figure~\ref{vdis_all}.
+The velocity difference $\delta v$ shows a bimodal distribution.
+We then calculate the dispersion of the velocity difference and plot the core velocity dispersion (CVD $\equiv \langle\delta v^2\rangle^{1/2}$).
+The relation between the CVD and the apparent separation
+between cores can be fitted with a power law as CVD (km/s) $=0.2L ({\rm pc})^{0.6}+0.1$ for
+$L$ between 0 and 10 pc, while those points having $L>10$ pc  show large scatter, likely caused by under-sampling
+due to the finite size of the cloud. The mean value of the CVD for separation $L>10$ pc is $1.04$ km/s.
+The bimodal distribution in the velocity difference can be understood as defining two spatial scales.
+One corresponds to the typical size of a "core cluster", about 4 pc, while the other one shows the typical  "core cluster" separation, about 8 pc.
+
+To evaluate the significance of the bimodal distribution, we constructed a simple two-core-cluster model with 500 cores, with clusters of cores, each having a radius $R=7$ pc.
+The clusters are separated by 9 pc.
+A uniform spatial distribution of cores is assumed for both clusters.
+The velocity of a core is given according to a Gaussian  with variance $\sigma$, determined by
+$(\sigma/\sigma_{\rm max}) = (D/R)^{0.5}$, where $D$ is the distance of
+the core from the center of the cluster it belongs to, and $\sigma_{\rm max}$ is the maximum $\sigma$ at the edge of a cluster, taken here to be
+1.3 km/s. In practice,
+the line of sight velocity of a core is taken to be a random number from a gaussian
+distribution with variance $\sigma/\sqrt{3}$.
+There is an assumed systematic difference between the line of sight velocities of the two cluster, which is 1.8km/s in our model.
+We are able to reproduce the major features
+of the observed CVD plot (figure~\ref{vdis_all}) with this simple model. Rigorously speaking, the velocity of cores in each cluster do
+not follow the exact form of  Larson's law, because there is a center. However, the effect of such a distinction is negligible. We have tried to generate a sample of
+cores in which the velocity of a core is still gaussian distributed whose variance depends on its distance to the previously generated core, denoted as $l$, with
+the same relation $\sigma \propto l^{0.5}$, and get similar results as figure~\ref{vdis_all}.
+The two length scales, i.e. the size of a core cluster, and the separation between the clusters are clearly seen in figure~\ref{vdis_all_simu}.
+The relation between the CVD and the apparent separation in the $L=0\sim 10$ pc region can be fitted by a power law of the form CVD (km/s) $=0.13L ({\rm pc})^{0.7}+0.2$.
+In $L>10$ pc region, CVD can be fitted by a linear function of  slope 0.04. The mean value of the core velocity difference in this region is $0.93$ km/s.
+We conclude that the main features of the observed CVD vs $L$ relationship and the observed $\delta v$ are reproduced reasonably well by this simple demonstration.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{overlay_velocity.eps}
+\caption{ Overlay of the cores identified using the 3D $^{13}$CO data cube
+on the $^{12}$CO total intensity map with the centroid velocity coded in color.
+In most parts of Taurus, the core centroid velocities are similar. However,
+at the lower right corner, the centroid velocities of the cores differ systematically from those in other regions, which may suggest
+a different origin of these cores. In the study of the core velocity dispersion (CVD$\equiv \langle\delta v^2\rangle^{1/2}$), we exclude these cores.\label{overlay_velocity}}
+\end{figure}
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{overlay_velocity2.eps}
+\caption{ Overlay of the cores found in 3D $^{13}$CO data cube on the $^{12}$CO total intensity map. The difference
+between centroid velocity of the cores and the $^{12}$CO peak velocity is indicated by the color and is generally small ($\leq$ 1 km/s). \label{overlay_velocity2}}
+\end{figure}
+
+
+
+
+\clearpage
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{vdis_all.eps}
+\caption{ Plot of the core velocity difference, $\delta v$  vs.\  the apparent separation $L$ of cores and the core velocity dispersion (CVD$\equiv \langle\delta v^2\rangle^{1/2}$).
+The background is a map of the number of data points in the $\delta v - L$ plane, with grey scale showing the
+density of points. The contour of the density distribution in this plot is also shown.
+The green diamonds represent the variance of the velocity difference in each separation bin.
+Note that in the lower right corner of figure~\ref{overlay_velocity},  the centroid velocity of the
+cores is systematically different from that in other regions. Therefore, in this analysis, we exclude those cores.
+The background density distribution shows two group of points, which is also clear by looking at the contours. This two groups define two length scales. One corresponds to the typical size of a "core cluster", about 4pc, while the other one shows the "core cluster" separation to be about 8pc.
+\label{vdis_all}}
+\end{figure}
+\clearpage
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=18cm]{vdis_all_simu.eps}
+\caption{ Two numerically generated samples of spherical clusters of cores, each having a 7 pc radius and with a separation of 9 pc between the centers of two clusters.
+In each cluster, the cores are distributed uniformly. The line of sight velocity of a core is assigned by generating a random number from a gaussian
+distribution with variance $\sigma \propto D^{0.5}$, where $D$ is the distance between
+the core and the center of the cluster it belongs to.
+The same statistical treatment as that applied to the actual data (figure~\ref{vdis_all}) has been employed. The two length scales, i.e. the size of a core cluster,
+and the separation of the clusters are clearly seen. The points with apparent separation $ 0 \geq L \leq 10$  pc can
+be fitted with a power law of CVD (km/s)$=0.13L ({\rm pc})^{0.7}+0.2$.
+The horizontal line shows the mean value, $0.93$ km/s, of points with $L> 10$ pc.
+\label{vdis_all_simu}}
+\end{figure}
+
+
+\section{Discussion}
+\label{sec:discussion}
+The shape of the core mass function has been for some time under scrutiny due to its possible relevance to the origin of
+stellar initial mass function. We found that a log-normal distribution best represents the CMF in Taurus, through fitting the 3D \13co\ data cube. Such a log-normal distribution of density could be a natural result of a complex process, e.g. turbulence~\citep{Tassis2010}. If the CMF is determined by  a process, in which many factors affect the final results,
+the shape of the CMF would be log-normal. Therefore, The \13co\ CMF in Taurus could be a result of complex
+core formation processes.
+
+We also searched for and studied the cores identified in the 2MASS extinction map.
+For extinction cores, a power law function is a better
+fit than a log-normal function. It is important to note the significant differences between 3D fitting and 2D fitting. In the former case, velocity
+information is invoked so that overlapping cores can be separated. We have compared the fitting to the 3D data cube and
+that to the 2D total intensity map (See figure~\ref{region10}). There are some
+low-density cores that do not emerge in the fitting to the 3D data cube. There are also some overlapping cores, which can be separated in
+the 3D fitting by using the velocity information (an example of the spectrum is shown in figure~\ref{overlap}).
+This is a direct demonstration of the peril of solely relying on total column density maps (such as dust continuum) to obtain core properties.  In light of these considerations, we believe that  the CMF derived from  extinction maps should not be used to interpret the origin of IMF, even though it may have a similar power-law form as that of the IMF.
+
+\begin{figure}
+\begin{tabular}{c}
+\includegraphics[width=14cm]{15.1_3D.eps}\\
+\includegraphics[width=14cm]{15.1_2D.eps}\\
+\end{tabular}
+\caption{Fitting to a patch within region 10. The spectrum at the location of the red circle in the upper right of panel (a) is shown in figure~\ref{overlap}. (a) Cores found in the data cube of region 10 (3D).(b) Cores found in the total intensity of the original data of region 10 (2D).
+More cores are found in the 2D fitting, especially in the relatively diffuse regions. These cores contain large velocity variations within them. \label{region10}}
+\end{figure}
+
+\begin{figure}
+\begin{tabular}{c}
+\includegraphics[width=14cm]{spec.eps}\\
+\end{tabular}
+\caption{An example spectrum containing contributions from two cores, which are clearly separated in velocity. The location where this spectrum was observed is indicated by the red circle in panel (a) of figure~\ref{region10}. \label{overlap}}
+\end{figure}
+
+The large sample size and substantial spatial dynamic range of the Taurus \13co\ core sample allow us
+to reconstruct the CVD for the first time. The CVD exhibits a power-law behavior as a function of the apparent separation $L$  between cores changes for $L<$ 10 pc (see figure~\ref{vdis_all}). This is similar to Larson's law for the velocity dispersion of the gas. The
+peak velocities of \13co\ cores do not deviate from the centroid
+velocities of ambient \co\ by more than half the \co\ line width. These
+suggest that dense cores condense out of the more
+diffuse gas without additional energy input from sources, such as protostars or
+converging flows. Simulation of core formation under the influence of converging flows suggest that massive cores exhibit relatively small line widths compared to less massive ones~\citep{Gong2011}.
+We do not see this trend in our work, i.e. there is no apparent correlation between the mass and the line width or
+between the mass and the temperature (see figures~\ref{mass_velocity} and~\ref{mass_temperature}).
+
+\begin{figure}[htb]
+\centering
+\begin{tabular}{c}
+\includegraphics[width=12cm]{M_v3D.eps}\\
+\end{tabular}
+\caption{ The mass-line width relation of the cores found by GAUSSCLUMPS. There is no apparent correlation between the mass and the line width.
+\label{mass_velocity}}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\begin{tabular}{c}
+\includegraphics[width=12cm]{M_t3D.eps}\\
+\end{tabular}
+\caption{The mass-temperature relation of the cores found by GAUSSCLUMPS. There is no apparent correlation between these two quantities.
+\label{mass_temperature}}
+\end{figure}
+
+
+In recent simulations of core formation~\citep[e.g.\ ][]{Gong2011} or star cluster formation~\citep[e.g.][]{Offner2009}, there is sufficient information to produce a CVD plot of the simulated core samples. Since CVD is sensitive to the dynamic history
+of core formation,  we encourage the simulators to perform such analysis to facilitate direct comparison between theoretical models and observations.
+
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We have studied the dense cores identified within the Taurus molecular cloud using a 100 $\rm degree^2$ \13co\ $J=1\to 0$ map of this region. The spatial resolution of 0.014 pc  and the velocity resolution of 0.266 km/s facilitate a detailed study of the physical conditions of dense cores in Taurus. The spatial dynamic range of 1000 of our data set allows  examination of the collective motions of dense cores and their relationship to their surroundings. We have found that the velocity information helps to exclude cores which we regard as spurious cores.
+
+Our conclusions regarding the extraction of cores and their properties are:
+
+1) Velocity information is essential in resolving  overlapping cores. Even in a nearby region like Taurus and with only relatively small typical extinction of $\sim 10$ mag compared with, e.g., infrared dark clouds, the extinction map and total intensity maps produce different core samples with different core mass functions (CMF).
+
+2) The mass function of the 3D(x,y,v) \13co\ cores can be fitted better with a log-normal function ($\mu = 0.32$ and $\sigma= 1.36$) than with a
+power law function. Complex core forming processes, including turbulence, are favored. There is no simple relation between the Taurus CMF and
+the stellar IMF.
+
+3) 56\% of the cores are found to have mass greater than  the critical Bonnor-Ebert mass if the temperature of the surrounding medium is 10 K. For a 20 K environment temperature, the fraction is 23\%. For these hydrostatically unstable cores, a log-normal function fits their mass function extremely well.
+
+4) Only 10\% of cores are approximately  bound by their own gravity (with the virial parameter $M_{\rm vir}/M<2$).
+External pressure plausibly plays a significant role in confining the cores with small density contrast to the surrounding medium.
+
+5) In Taurus, the relation between core velocity dispersion (CVD$\equiv \langle\delta v^2\rangle^{1/2}$) and the apparent separation
+between cores $L$ can be fitted with a power law of the form CVD (km/s) $=0.2L ({\rm pc})^{0.6}+0.1$ in the $ 0 \leq L \leq 10$ pc region, similar to the Larson's law, with a median value of 0.78 km/s.
+
+6) The observed CVD is reproduced by using a simple two-core-cluster model, in which there are two core clusters with radius 7pc and a separation 9pc between these two clusters.
+
+7) The low velocity dispersion among cores, the close similarity between CVD and Larson's law, and the small difference between core centroid velocities and the ambient diffuse gas all suggest that dense cores condense out of the diffuse gas without additional energy input and are consistent with an ISM evolution picture without significant feedback from star formation or significant impact from converging flows.
+
+8) CVD can be an important diagnostic of the core dynamics and the cloud evolution. We encourage simulators to provide comparable information based on their calculations.
+
+
+
+
+
+
+
+
+\acknowledgments
+This work is partly supported by  China Ministry of Science and Technology under State Key Development Program for Basic Research (2012CB821800). This work was carried out in part at the Jet Propulsion Laboratory, operated by the California Institute of Technology.
+
+\clearpage
+%\begin{center}
+
+
+
+
+
+
+
+
+
+
+\begin{longtable}[htb]{|c|c|c|c|c|c|c|c|c|c|}
+
+\caption[Properties of the cores]{\textbf{Properties of the cores found in 3D $^{13}$CO data cube.}}\label{tab:clumps}\\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}}& \multicolumn{1}{c|}{\textbf{T(K)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}_{\rm vir}$($\mathbf{M}_{\odot}$)\end{sideways}}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}FWHM(km/s)\end{sideways}}}\\ \hline
+
+\endfirsthead
+
+\multicolumn{10}{c}%
+
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}}& \multicolumn{1}{c|}{\textbf{T(K)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}_{\rm vir}$($\mathbf{M}_{\odot}$)\end{sideways}}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}FWHM(km/s)\end{sideways}}}\\ \hline \hline
+
+\endhead
+
+\hline \multicolumn{10}{|r|}{{Continued on next page}} \\ \hline
+
+\endfoot
+
+
+\endlastfoot
+\hline\hline
+
+   1 &  4h31m52.80s & 26d15m 0.00s &   5.05 &   4.50 & 171.14 &   9.61 &  22.76 &  68.94 &   3.06 \\
+   2 &  4h18m38.40s & 27d22m48.00s &   4.77 &   2.29 & 141.01 &  10.54 &  22.25 &  59.70 &   3.44 \\
+   3 &  4h31m50.40s & 24d32m60.00s &   4.52 &   3.55 & 138.02 &   9.78 &  20.51 &  40.63 &   2.57 \\
+   4 &  4h23m33.60s & 25d 3m36.00s &   5.80 &   3.54 & 128.23 &   9.39 &  20.12 &  26.04 &   1.93 \\
+   5 &  4h21m 4.80s & 27d 4m12.00s &   4.51 &   3.76 &  90.48 &   9.41 &  19.85 & 104.16 &   4.07 \\
+   6 &  4h28m60.00s & 24d30m 0.00s &   4.94 &   4.47 & 103.90 &   9.41 &  19.82 &  97.69 &   3.67 \\
+   7 &  4h11m14.40s & 28d31m48.00s &   5.34 &   3.01 &  97.40 &  10.06 &  18.77 &  22.22 &   1.91 \\
+   8 &  4h22m 4.80s & 25d 9m36.00s &   7.96 &   3.05 & 121.38 &   7.80 &  16.47 &  24.22 &   1.79 \\
+   9 &  4h 9m16.80s & 28d 3m36.00s &   4.31 &   3.97 &  37.28 &   9.85 &  16.30 &  30.28 &   2.19 \\
+  10 &  4h32m57.60s & 25d56m24.00s &   4.24 &   3.68 &   4.96 &   8.46 &  15.48 &  14.01 &   1.53 \\
+\hline
+\end{longtable}
+%\end{center}
+{\footnotesize Properties of the 10 most massive cores. Following the identifiers in column 1, the next two columns are the RA and Dec of the center of the fitted cores.
+The semi-major axis $R_{\rm major}$ and semi-minor axis $R_{\rm minor}$ of the fitted cores follow. The sixth
+column is the position angle of cores (angle from north to the major axis). The next column is the peak temperature of the cores. The mass $M$ and the virial mass $M_{vir}$ follow. The final column gives the full width to half maximum line width of the $^{13}$CO line.
+}
+
+\begin{longtable}[htb]{|c|c|c|c|c|c|c|c|c|c|}
+
+\caption[Properties of the cores]{\textbf{Properties of the cores found in the smoothed $^{13}$CO data cube.}}\label{tab:clumps_smooth}\\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}}& \multicolumn{1}{c|}{\textbf{T(K)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}_{\rm vir}$($\mathbf{M}_{\odot}$)\end{sideways}}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}FWHM(km/s)\end{sideways}}}\\ \hline
+
+\endfirsthead
+
+\multicolumn{10}{c}%
+
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}}& \multicolumn{1}{c|}{\textbf{T(K)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}_{\rm vir}$($\mathbf{M}_{\odot}$)\end{sideways}}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}FWHM(km/s)\end{sideways}}}\\ \hline \hline
+
+\endhead
+
+\hline \multicolumn{10}{|r|}{{Continued on next page}} \\ \hline
+
+\endfoot
+
+
+\endlastfoot
+\hline\hline
+
+  1 &  4h19m31.20s & 27d 8m60.00s &   6.85 &   4.45 & 153.85 &   8.01 & 103.89 & 153.99 &   4.26 \\
+   2 &  4h21m12.00s & 27d 2m24.00s &  10.23 &   7.22 & 124.48 &   9.39 &  77.23 & 356.37 &   5.20 \\
+   3 &  4h32m43.20s & 24d21m36.00s &   7.28 &   4.97 & 146.94 &  11.05 &  76.78 &  88.85 &   3.11 \\
+   4 &  4h30m52.80s & 26d53m24.00s &   6.91 &   6.23 &  88.84 &   8.43 &  71.84 &  60.66 &   2.45 \\
+   5 &  4h11m14.40s & 28d33m36.00s &   9.22 &   5.92 & 117.68 &  11.65 &  62.49 &  56.25 &   2.24 \\
+   6 &  4h23m38.40s & 25d 0m 0.00s &   7.93 &   5.57 & 133.70 &  10.26 &  47.09 &  48.04 &   2.17 \\
+   7 &  4h31m52.80s & 26d17m60.00s &   6.01 &   5.23 &   6.49 &   9.96 &  35.28 &  94.38 &   3.32 \\
+   8 &  4h32m43.20s & 26d 2m60.00s &   6.01 &   5.14 & 132.78 &   9.05 &  34.43 & 235.65 &   5.25 \\
+   9 &  4h31m43.20s & 24d31m48.00s &   5.73 &   5.64 & 152.53 &  11.37 &  33.97 & 265.37 &   5.51 \\
+  10 &  4h35m45.60s & 22d56m24.00s &   5.28 &   4.00 &  71.26 &   6.79 &  31.17 &  47.84 &   2.61 \\
+\hline
+\end{longtable}
+%\end{center}
+{\footnotesize The columns are arranged as those of table~\ref{tab:clumps}. }
+
+
+\begin{center}
+
+\clearpage
+\begin{longtable}[htb]{|c|c|c|c|c|c|c|}
+
+\caption[Properties of the cores]{\textbf{Properties of the cores found in extinction map.}}\label{tab:clumpsEx}\\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}\\ \hline
+
+\endfirsthead
+
+\multicolumn{7}{c}%
+
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{RA($^\circ$)}} & \multicolumn{1}{c|}{\textbf{DEC($^\circ$)}}& \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm major}(')$\end{sideways}}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{L}_{\rm minor}(')$\end{sideways}}}
+& \multicolumn{1}{c|}{\textbf{$\mathbf{\theta}$($^\circ$)}} & \multicolumn{1}{c|}{\textbf{\begin{sideways}$\mathbf{M}$($\mathbf{M}_{\odot}$)\end{sideways}}}\\ \hline
+
+\endhead
+
+\hline \multicolumn{7}{|r|}{{Continued on next page}} \\ \hline
+
+\endfoot
+
+
+\endlastfoot
+\hline\hline
+
+   1 &  4h40m28.80s & 25d30m 0.00s & 10.69 &  4.89 &  94.80 & 88.88 \\
+   2 &  4h18m24.00s & 28d26m24.00s &  4.80 &  4.44 &   6.27 & 81.94 \\
+   3 &  4h39m14.40s & 25d52m48.00s &  5.72 &  3.61 & 149.69 & 63.14 \\
+   4 &  4h33m52.80s & 29d34m48.00s & 17.85 &  8.36 &  84.24 & 62.17 \\
+   5 &  4h13m50.40s & 28d13m12.00s &  5.49 &  2.64 & 134.34 & 57.63 \\
+   6 &  4h38m 2.40s & 26d14m24.00s &  8.90 &  3.47 & 124.00 & 54.99 \\
+   7 &  4h39m40.80s & 26d10m12.00s &  6.04 &  3.88 & 142.96 & 50.20 \\
+   8 &  4h29m19.20s & 24d33m36.00s &  5.35 &  3.08 & 123.45 & 48.50 \\
+   9 &  4h40m55.20s & 25d54m36.00s &  6.99 &  2.33 & 159.23 & 42.72 \\
+  10 &  4h16m60.00s & 28d40m12.00s &  7.28 &  4.78 & 113.12 & 40.48 \\
+\hline
+
+\end{longtable}
+{\footnotesize Properties of the 10 most massive cores found in 2MASS extinction maps. Following the core identifiers, the next two columns are the RA and Dec of the center of the fitted cores, the the semi-major $R_{\rm major}$ and semi-minor $R_{\rm minor}$ of the fitted cores. The sixth
+column is the position angle of cores (angle from north to the major axis).  The last column
+is the core mass $M$.}
+
+\end{center}
+
+
+
+
+%\appendix
+
+
+
+\bibliography{msbib}{}
+\bibliographystyle{apj}
+
+\end{document}
+
